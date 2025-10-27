@@ -21,3 +21,123 @@ if (operacao === "dobro"){
 
 executar("dobro") 
 executar("triplo") 
+
+// Adicionando condicionais if
+
+function dobro() {
+    console.log("O número será dobrado")
+}
+
+function triplo() {
+    console.log("O número será triplicado")
+}
+
+function executar(operacao) {
+  if (operacao === "dobro") {
+    return dobro();
+  } else if (operacao === "triplo") {
+    return triplo();
+  }
+}
+
+executar("dobro") 
+executar("triplo") 
+
+// outra atividade 
+
+function dobro(x) {
+    return x * 2
+}
+
+function executar(operacao,x) {
+    if (operacao === "dobro") {
+        return dobro(x)
+    }
+}
+
+console.log(executar("dobro", 4)) // deve retornar 8
+console.log(executar("dobro", 5)) // deve retornar 10
+
+// Operações múltiplas
+
+function dobro(x) {
+    return x * 2
+}
+
+function triplo(x) {
+    return x * 3
+}
+
+function executar(operacao, x) {
+    if (operacao === "dobro") {
+return dobro (x)
+    } else if (operacao === "triplo") {
+return triplo (x)
+    }
+}
+
+console.log(executar("dobro", 5)) 
+console.log(executar("triplo", 30)) 
+
+// atividade Complete a função executar()
+function dobro(x) {
+    return x * 2
+}
+
+function triplo(x) {
+    return x * 3
+}
+
+function executar(operacao, x) {
+    console.log(operacao)
+    console.log(x)
+    if (operacao === "dobro") {
+        return dobro (x);
+    }else if (operacao === "triplo") {
+        return triplo (x);
+    }
+    
+}
+
+// Exemplos de uso
+executar ("dobro", 5)
+executar ("triplo", 8)
+
+
+
+
+
+
+function soma(a, b) {
+    return a + b
+}
+
+function multiplica(a, b) {
+    return a * b
+}
+
+function subtrai(a, b) {
+    return a - b
+}
+
+function divide(a, b) {
+    return a / b
+}
+
+function executa(operacao, x, y) {
+    console.log(operacao)
+    console.log(x, y)
+    
+    if (operacao === "soma") {
+        return soma(x, y)
+    } else if (operacao === "subtrai") {
+        return subtrai(x, y)
+    } else if (operacao === "multiplica") {
+        return multiplica(x, y)
+    } else if (operacao === "divide") {
+        return divide(x, y)
+    }
+}
+
+// Não modifique a linha abaixo
+console.log(executa("soma", 10, 20))
