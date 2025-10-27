@@ -1,0 +1,23 @@
+//atividade 11. Retorno implícito
+
+function quantidadeDeLetras(nome) {
+    return nome.length
+}
+
+console.log(quantidadeDeLetras("César")) 
+console.log(quantidadeDeLetras("Jéssica"))
+
+// atv 12. Chamada de função condicional
+
+function dobro() {
+      console.log("O número será dobrado")
+}
+
+function executar(operacao) {
+if (operacao === "dobro"){
+      return dobro()
+}
+}
+
+executar("dobro") 
+executar("triplo") 
