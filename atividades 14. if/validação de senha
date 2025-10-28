@@ -1,0 +1,34 @@
+function senhaEValida(senha) {
+    console.log(senha)
+    return senha.length >= 10;
+}
+
+
+
+// validação de senha aprimorado 
+function senhaEValida(senha) {
+    // Remove espaços no início e no fim
+    const senhaSemEspacos = senha.trim();
+
+    // Verifica se a senha (sem espaços) tem 10 ou mais caracteres
+    return senhaSemEspacos.length >= 10;
+}
+
+
+// function obterLetraDaNota
+
+function obterLetraDaNota(nota) {
+    if (nota >= 15) {
+return "A"
+    } else if (nota >= 10) {
+return "B"
+    } else {
+return "F"
+    }
+}
+
+
+console.log(obterLetraDaNota(18))
+console.log(obterLetraDaNota(15))
+console.log(obterLetraDaNota(13))
+console.log(obterLetraDaNota(4))
