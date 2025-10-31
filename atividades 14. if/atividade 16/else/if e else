@@ -1,0 +1,48 @@
+function obterLetraDaNota(nota) {
+  if (nota >= 15) {
+    return "A";
+  } else if (nota >= 10) {
+    return "B";
+  } else {
+    return "F";
+  }
+}
+
+console.log(obterLetraDaNota(18)); // A
+console.log(obterLetraDaNota(15)); // A
+console.log(obterLetraDaNota(13)); // B
+console.log(obterLetraDaNota(4));  // F
+
+
+// Exercício 2
+
+function receberSaudacaoPorPeriodoDoDia(hora) {
+  if (hora < 12) {
+    return "Bom dia";
+  } else if (hora < 20) {
+    return "Boa tarde";
+  } else {
+    return "Boa noite";
+  }
+}
+
+
+console.log(receberSaudacaoPorPeriodoDoDia(11)); // "Bom dia"
+console.log(receberSaudacaoPorPeriodoDoDia(12)); // "Boa tarde"
+console.log(receberSaudacaoPorPeriodoDoDia(14)); // "Boa tarde"
+console.log(receberSaudacaoPorPeriodoDoDia(22)); // "Boa noite"
+
+//exercício 3 
+
+
+function eCodigoPromocionalValido(codigo) {
+  // Remove espaços no início e no fim
+  codigo = codigo.trim();
+
+  // Verifica se o comprimento está entre 5 e 10 (inclusive)
+  if (codigo.length >= 5 && codigo.length <= 10) {
+    return true;
+  } else {
+    return false;
+  }
+}

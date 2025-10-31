@@ -1,0 +1,66 @@
+//exercício 1 - return sem else
+
+function obterMesagemVotacao(idade) {
+    if (idade >= 16) {
+        return "Você está autorizado a votar"
+    }
+    return "Você não está autorizado a votar"
+}
+
+
+console.log(obterMesagemVotacao(20))
+console.log(obterMesagemVotacao(10))
+
+//exercício 2 - return sem else 
+    function podeVotar(idade) {
+    if (idade >= 16) {
+        return true
+    }
+    return false
+}
+
+console.log(podeVotar(25))
+console.log(podeVotar(13))
+
+//exercício 3 - Complete a função de forma que ela retorne true quando o número for positivo, e false caso contrário.
+
+function ePositivo(numero) {
+    if (numero > 0) {
+        return true
+    }   
+        return false
+}
+
+console.log(ePositivo(7))
+console.log(ePositivo(-4))
+
+//exercício 4 - Complete a função de forma que ela retorne true quando a idade do usuário for pelo menos 16 anos, e false caso contrário.
+
+function podeVotar(idade) {
+  return idade >=16
+}
+
+
+console.log(podeVotar(25))
+console.log(podeVotar(13))
+
+//exercício 5 - Complete a função passou() de forma que ela retorne true quando a nota for 7 ou superior, e false caso contrário
+
+function passou(nota) {
+    return nota >=7
+}
+
+
+console.log(passou(8))
+console.log(passou(10))
+console.log(passou(15))
+
+// exercício 6 - Complete a função estaCongelando() de forma que ela retorne true quando a temperatura estiver estritamente abaixo de zero, e false caso contrário.
+
+
+function estaCongelando(temperatura) {
+  return temperatura <= 0
+}
+
+console.log(estaCongelando(-5))
+console.log(estaCongelando(10))
