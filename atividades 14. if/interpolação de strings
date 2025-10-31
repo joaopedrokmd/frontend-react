@@ -1,0 +1,36 @@
+//Complete a função cumprimentarUsuario() de forma que ela retorne a string "Bem-vindo, X", onde X é o nome do usuário recebido como parâmetro.
+ function cumprimentarUsuario(nome) {
+  return `Bem-vindo, ${nome}`;
+}
+
+console.log(cumprimentarUsuario("Alex"))
+console.log(cumprimentarUsuario("Sara"))
+console.log(cumprimentarUsuario("Francisco"))
+
+//Complete a função obterDescricaoDaIdade() de forma que ela retorne a string "Você tem atualmente X anos", onde X é a idade do usuário recebida como parâmetro.
+
+function obterDescricaoDaIdade(idade) {
+  return `Você tem atualmente ${idade} anos`;
+}
+
+console.log(obterDescricaoDaIdade(18)); // "Você tem atualmente 18 anos"
+console.log(obterDescricaoDaIdade(20)); // "Você tem atualmente 20 anos"
+
+//Preencha a função obterConfirmacaoDeEmail() para que retorne a string: "Acabamos de enviar um e-mail para X. Por favor, verifique sua caixa de entrada.", onde X é o e-mail recebido como parâmetro.
+
+function obterConfirmacaoDeEmail(email) {
+  return `Acabamos de enviar um e-mail para ${email}. Por favor, verifique sua caixa de entrada.`;
+}
+
+console.log(obterConfirmacaoDeEmail("ana@siteexemplo.com"));
+console.log(obterConfirmacaoDeEmail("alex@siteexemplo.com"));
+
+
+//Complete a função obterNomeCompleto() de forma que ela retorne o nome completo do usuário.
+
+function obterNomeCompleto(nome, sobrenome) {
+  return `${nome} ${sobrenome}`;
+} 
+
+console.log(obterNomeCompleto("Alex", "Ferreira")) // "Alex Ferreira"
+console.log(obterNomeCompleto("Cláudia", "Moraes")) // "Cláudia Moraes"
