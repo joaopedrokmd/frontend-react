@@ -1,0 +1,10 @@
+// Complete a função obterDescricaoDaIdade(), de forma que ela retorne a string "Você tem atualmente X anos", onde X é a idade do usuário recebida como parâmetro
+
+function obterDescricaoDaIdade(idade) {
+    return "Você tem atualmente " + idade + " anos";
+}
+
+// Não modifique as linhas abaixo
+console.log(obterDescricaoDaIdade(18))
+console.log(obterDescricaoDaIdade(20))
+
