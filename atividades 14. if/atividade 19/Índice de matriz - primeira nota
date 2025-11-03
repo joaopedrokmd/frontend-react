@@ -1,0 +1,16 @@
+let notas = [10, 5, 13]
+let primeiraNota = notas[0]
+console.log(primeiraNota)
+
+
+//Crie uma variável chamada segundaNota e atribua a ela o segundo item da matriz notas.
+
+let notas = [10, 5, 13]
+let segundaNota = notas[1]
+console.log(segundaNota)
+
+//Crie uma variável chamada valor e atribua a ela o terceiro item da matriz que armazena as temperaturas.
+
+let temperaturas = [-5, 12, 15, 18, 13]
+let valor = temperaturas[2]
+console.log(valor)
