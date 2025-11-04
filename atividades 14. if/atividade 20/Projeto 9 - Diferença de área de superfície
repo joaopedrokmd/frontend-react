@@ -1,0 +1,8 @@
+function calcularDiferenca(primeiroRetangulo, segundoRetangulo) {
+  const area1 = primeiroRetangulo[0] * primeiroRetangulo[1];
+  const area2 = segundoRetangulo[0] * segundoRetangulo[1];
+  return area1 - area2;
+}
+
+// Exemplos de teste
+console.log(calcularDiferenca([10, 20], [5, 10])); // Deve retornar 150

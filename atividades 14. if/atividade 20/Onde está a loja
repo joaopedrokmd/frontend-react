@@ -1,0 +1,7 @@
+function localizacaoDaLoja(coordenadas) {
+  const [lat, lon] = coordenadas;
+  return `A loja está localizada em ${lat}, ${lon}`;
+}
+
+console.log(localizacaoDaLoja([5.123, 2.374]));
+console.log(localizacaoDaLoja([-2.207, 9.319]));
