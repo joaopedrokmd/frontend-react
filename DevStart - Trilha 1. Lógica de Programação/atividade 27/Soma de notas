@@ -1,0 +1,7 @@
+let notas = [10, 5, 15, 20]
+let soma = notas.reduce(function(total, atual)
+{
+  return total + atual;
+},0);
+
+console.log(soma);

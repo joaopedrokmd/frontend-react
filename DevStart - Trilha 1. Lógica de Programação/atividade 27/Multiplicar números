@@ -1,0 +1,9 @@
+function multipliqueNumeros(numeros) {
+let resultado = numeros.reduce(function(total,atual){
+  return total*atual
+},1)
+  return resultado;
+}
+
+console.log(multipliqueNumeros([10, 20, 30])) // 6000
+console.log(multipliqueNumeros([2, 4, 2, 10])) // 160
