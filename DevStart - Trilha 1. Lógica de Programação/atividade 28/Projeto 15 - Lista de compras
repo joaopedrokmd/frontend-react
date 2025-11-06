@@ -1,0 +1,8 @@
+function adicionarItem(itens, item) {
+  itens.push(item); // adiciona o item ao final da lista
+  return itens;     // retorna a lista atualizada
+}
+
+function exportarMinusculasCSV(itens) {
+  return itens.map(i => i.toLowerCase()).join(", "); // transforma em minúsculas e junta com ", "
+}
