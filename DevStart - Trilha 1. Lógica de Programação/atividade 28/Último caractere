@@ -1,0 +1,6 @@
+function obterUltimoCaractere(nomes) {
+  return nomes.map(nome => nome[nome.length - 1]);
+}
+
+console.log(obterUltimoCaractere(["Alice", "Bruno", "Samuel", "Augusto"])); 
+console.log(obterUltimoCaractere(["samara", "alexandre", "carla"]));

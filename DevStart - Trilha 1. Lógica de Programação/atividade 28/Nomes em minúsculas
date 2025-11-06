@@ -1,0 +1,9 @@
+function nomesEmMinusculas(nomes) {
+  return nomes.map(nome => nome.toLowerCase());
+}
+
+console.log(nomesEmMinusculas(["Alice", "Bruno", "Samuel", "Augusto"])); 
+// ["alice", "bruno", "samuel", "augusto"]
+
+console.log(nomesEmMinusculas(["SAMARA", "ALEXANDRE", "CARLA"])); 
+// ["samara", "alexandre", "carla"]

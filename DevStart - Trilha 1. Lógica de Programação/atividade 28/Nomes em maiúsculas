@@ -1,0 +1,9 @@
+function nomesEmMaiusculas(nomes) {
+  return nomes.map(nome => nome.toUpperCase());
+}
+
+console.log(nomesEmMaiusculas(["Alice", "Bruno", "Samuel", "Augusto"]));
+// ["ALICE", "BRUNO", "SAMUEL", "AUGUSTO"]
+
+console.log(nomesEmMaiusculas(["samuel", "alice", "cARLa"]));
+// ["SAMUEL", "ALICE", "CARLA"]

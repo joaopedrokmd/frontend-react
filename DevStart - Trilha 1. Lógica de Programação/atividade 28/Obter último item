@@ -1,0 +1,7 @@
+function obterUltimoItem(itens) {
+  return itens[itens.length - 1];
+}
+
+console.log(obterUltimoItem(["Leite"])); // "Leite"
+console.log(obterUltimoItem(["Tomate", "Queijo"])); // "Queijo"
+console.log(obterUltimoItem([])); // undefined

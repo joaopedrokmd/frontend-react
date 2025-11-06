@@ -1,0 +1,6 @@
+function obterIniciais(nomes) {
+  return nomes.map(nome => nome[0]);
+}
+
+console.log(obterIniciais(["Alice", "Bruno", "Samuel", "Augusto"])); 
+console.log(obterIniciais(["samara", "alexandre", "carla"])); 

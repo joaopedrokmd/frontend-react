@@ -1,0 +1,8 @@
+function adicionarBanana(itens) {
+  itens.push("Banana");  // adiciona "Banana" ao final da matriz
+  return itens;          // retorna a nova matriz
+}
+
+console.log(adicionarBanana(["Leite"])); // ["Leite", "Banana"]
+console.log(adicionarBanana(["Tomate", "Queijo"])); // ["Tomate", "Queijo", "Banana"]
+console.log(adicionarBanana([])); // ["Banana"]

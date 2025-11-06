@@ -1,0 +1,3 @@
+let listaDeCompras = ["banana","maça","abacaxi","melão"];
+
+console.log (listaDeCompras);
