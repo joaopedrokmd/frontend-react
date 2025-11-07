@@ -1,0 +1,7 @@
+function estaPronto(temperatura) {
+  return temperatura >= 100 && temperatura <= 150;
+}
+
+console.log(estaPronto(90))   // false
+console.log(estaPronto(100))  // true
+console.log(estaPronto(160))  // false

@@ -1,0 +1,8 @@
+function obterPlanoDoUsuario(pagou, desafiosCompletos) {
+  return (pagou && desafiosCompletos >= 10) ? "profissional" : "gratuito";
+}
+
+console.log(obterPlanoDoUsuario(true, 5))  // "gratuito"
+console.log(obterPlanoDoUsuario(true, 20)) // "profissional"
+console.log(obterPlanoDoUsuario(false, 5)) // "gratuito"
+console.log(obterPlanoDoUsuario(false, 20)) // "gratuito"

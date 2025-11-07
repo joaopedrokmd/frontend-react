@@ -1,0 +1,8 @@
+function podeVisualizarArtigo(tipo, ehAutor) {
+  return tipo === "admin" || ehAutor === true;
+}
+
+console.log(podeVisualizarArtigo("admin", false)) // true
+console.log(podeVisualizarArtigo("admin", true))  // true
+console.log(podeVisualizarArtigo("user", true))   // true
+console.log(podeVisualizarArtigo("user", false))  // false
