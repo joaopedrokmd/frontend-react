@@ -1,0 +1,11 @@
+let nome1 = "Gabriel";
+let nome2 = "Luvas";
+
+let mensagem = `
+Olá, ${nome1} e ${nome2}!
+Sejam bem-vindos A KMD.
+Relaxa que neste lugar você verá coisas
+inscriveis
+`;
+
+console.log(mensagem);
