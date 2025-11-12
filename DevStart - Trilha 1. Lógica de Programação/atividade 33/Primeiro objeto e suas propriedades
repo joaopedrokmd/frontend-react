@@ -1,0 +1,15 @@
+//Crie um objeto restaurante com as seguintes informações:
+//nome: escreva qualquer nome de que você gostar.
+//classificacao: atribua qualquer classificação entre 1 e 5.
+//abertoNasSegundas: atribua um valor booleano para indicar se o restaurante abre ou não às segundas-feiras.
+
+
+let restaurante ={
+  nome: "Nordestino",
+  classificacao: 5,
+  abertoNasSegundas: true
+
+
+};
+
+console.log(restaurante);
