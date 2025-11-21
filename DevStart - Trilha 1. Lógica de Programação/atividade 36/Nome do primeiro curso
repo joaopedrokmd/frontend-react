@@ -1,0 +1,20 @@
+//Preencha a função obterNomeDoPrimeiroCurso() de forma que ela retorne o nome do primeiro curso disponível na matriz cursos.
+
+function obterNomeDoPrimeiroCurso(cursos) {
+    return cursos[0].nome;
+}
+
+let cursos = [
+  {
+    nome: "Introdução à programação",
+    description: "Aprenda os conceitos mais importantes da programação usando JavaScript.",
+    isCompleted: true
+  },
+  {
+    nome: "JavaScript básico",
+    description: "Aprenda Javascript de um jeito fácil e rápido.",
+    isCompleted: false
+  }
+];
+
+console.log(obterNomeDoPrimeiroCurso(cursos));

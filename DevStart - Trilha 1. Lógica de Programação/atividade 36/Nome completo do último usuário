@@ -1,0 +1,19 @@
+function obterNomeCompletoDoUltimoUsuario(usuarios) {
+    const ultimo = usuarios[usuarios.length - 1];
+    return ultimo.nome + " " + ultimo.sobrenome;
+}
+
+let usuarios = [
+  {
+    nome: "Samuel",
+    sobrenome: "Bastos",
+    idade: 21,
+  },
+  {
+    nome: "Carla",
+    sobrenome: "Nogueira",
+    idade: 38,
+  }
+];
+
+console.log(obterNomeCompletoDoUltimoUsuario(usuarios));

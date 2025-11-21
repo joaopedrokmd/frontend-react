@@ -1,0 +1,30 @@
+function obterSomaDeNotasAninhadas(estudantes) {
+    let soma = 0;
+
+    for (let i = 0; i < estudantes.length; i++) {
+        soma += estudantes[i].aprendizagemDeProgramacao.nota;
+    }
+
+    return soma;
+}
+
+let estudantes = [
+  {
+    nome: "Diana Kelling",
+    idade: 24,
+    aprendizagemDeProgramacao: {
+        anoInicio: 2020,
+        nota: 8
+    }
+  },
+  {
+    nome: "Marcelo Kioski",
+    idade: 31,
+    aprendizagemDeProgramacao: {
+        anoInicio: 2021,
+        nota: 9
+    }
+  }
+];
+
+console.log(obterSomaDeNotasAninhadas(estudantes));

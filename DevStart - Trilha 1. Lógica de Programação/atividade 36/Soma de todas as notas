@@ -1,0 +1,22 @@
+function obterSomaDeTodasAsNotas(notas) {
+    let soma = 0;
+
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i].nota;
+    }
+
+    return soma;
+}
+
+let notas = [
+  {
+    nome: "Sandra Assis",
+    nota: 8
+  },
+  {
+    nome: "Érica Blanck",
+    nota: 3
+  }
+];
+
+console.log(obterSomaDeTodasAsNotas(notas));
