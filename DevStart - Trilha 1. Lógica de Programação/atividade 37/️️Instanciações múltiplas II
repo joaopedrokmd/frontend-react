@@ -1,0 +1,8 @@
+class Receita {
+}
+
+let macarrao = new Receita();
+let salada = new Receita();
+
+console.log(macarrao);
+console.log(salada);
