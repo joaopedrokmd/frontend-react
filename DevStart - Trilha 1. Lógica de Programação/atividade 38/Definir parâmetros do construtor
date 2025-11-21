@@ -1,0 +1,9 @@
+class Receita {
+    constructor(nome, calorias) {
+        console.log(nome, calorias);
+    }
+}
+
+let macarrao = new Receita("Macarrão", 600);
+console.log("---");
+let salada = new Receita("Salada", 400);

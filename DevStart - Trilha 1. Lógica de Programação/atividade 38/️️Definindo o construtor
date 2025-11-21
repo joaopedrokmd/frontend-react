@@ -1,0 +1,5 @@
+class Receita {
+    constructor() {
+        console.log("Nova receita criada");
+    }
+}
