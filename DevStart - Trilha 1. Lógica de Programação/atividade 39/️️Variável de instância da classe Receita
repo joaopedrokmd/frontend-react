@@ -1,0 +1,10 @@
+class Receita {
+  constructor (){
+    this.tempoDeCozimento=30;
+    this.alergias= ["nozes"];
+  }
+    
+}
+
+let receita = new Receita();
+console.log(receita);
