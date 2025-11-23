@@ -1,37 +1,37 @@
 class Estatistica {
-    constructor(notas) {
-        this.notas = notas;
-    }
+  constructor(notas) {
+    this.notas = notas;
+  }
 
-    obterNumeroTotalDeNotas() {
-        return this.notas.length;
-    }
+  obterNumeroTotalDeNotas() {
+    return this.notas.length;
+  }
 
-    obterPrimeiraNota() {
-        return this.notas[0];
-    }
+  obterPrimeiraNota() {
+    return this.notas[0];
+  }
 
-    obterUltimaNota() {
-        return this.notas[this.notas.length - 1];
-    }
+  obterUltimaNota() {
+    return this.notas[this.notas.length - 1];
+  }
 
-    obterSomaDasNotas() {
-        return this.notas.reduce((total, nota) => total + nota, 0);
-    }
+  obterSomaDasNotas() {
+    return this.notas.reduce((total, nota) => total + nota, 0);
+  }
 
-    obterNotaMedia() {
-        return this.obterSomaDasNotas() / this.obterNumeroTotalDeNotas();
-    }
+  obterNotaMedia() {
+    return this.obterSomaDasNotas() / this.obterNumeroTotalDeNotas();
+  }
+  
+ exportarCsv() {
+  return this.notas.join(", ");
+}
 
-    exportarCsv() {
-        return this.notas.join(",");
-    }
 }
 
 // Uso da classe
 let notas = [8, 9, 5, 2, 9];
 let suasNotas = new Estatistica(notas);
-
 console.log(suasNotas.obterNumeroTotalDeNotas());
 console.log(suasNotas.obterPrimeiraNota());
 console.log(suasNotas.obterUltimaNota());
@@ -40,6 +40,8 @@ console.log(suasNotas.obterNotaMedia());
 console.log(suasNotas.exportarCsv());
 
 console.log("---");
+
+// ---- Modifique apenas o código que está acima desta linha ----
 document.write(`
 <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
     <h2>Aplicativo Sala de Aula</h2>   
