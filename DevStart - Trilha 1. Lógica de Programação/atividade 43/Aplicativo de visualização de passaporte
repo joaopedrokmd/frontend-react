@@ -1,0 +1,30 @@
+class Passaporte {
+    constructor(nome, sobrenome) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+
+    obterNome() {
+        return this.nome.toLowerCase();
+    }
+
+    obterSobrenome() {
+        return this.sobrenome.toUpperCase();
+    }
+
+    obterNomeCompleto() {
+        return `${this.nome} ${this.sobrenome}`;
+    }
+
+    obterIniciais() {
+        const iniNome = this.nome.charAt(0) || "";
+        const iniSob = this.sobrenome.charAt(0) || "";
+        return `${iniNome}.${iniSob}.`;
+    }
+
+    obterEhNomeValido() {
+        const nomeOk = this.nome.length >= 1;
+        const sobrenomeOk = this.sobrenome.length >= 1 && !this.sobrenome.endsWith(".");
+        return (nomeOk && sobrenomeOk) ? "Sim" : "Não";
+    }
+}

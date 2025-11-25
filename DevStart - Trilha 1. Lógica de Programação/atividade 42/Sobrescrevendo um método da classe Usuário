@@ -1,5 +1,9 @@
 class Usuario {
-    constructor(nome, sobrenome, idade) {
+    public nome: string;
+    public sobrenome: string;
+    public idade: number;
+
+    constructor(nome: string, sobrenome: string, idade: number) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.idade = idade;
@@ -26,6 +30,13 @@ class Escritor extends Usuario {
 
     publicarArtigo() {
         console.log("Artigo publicado");
+    }
+}
+
+
+class Leitor extends Usuario {
+    obterNomeCompleto(): string {
+        return `${this.nome} ${this.sobrenome} [leitor]`;
     }
 }
 

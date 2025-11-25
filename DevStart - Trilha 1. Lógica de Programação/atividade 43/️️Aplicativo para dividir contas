@@ -1,0 +1,25 @@
+class Conta {
+    constructor() {
+        this.valores = [];
+    }
+
+    adicionarTotais(valorestr) {
+        let valor = Number(valorestr);
+        if (!isNaN(valor) && valor > 0) {
+            this.valores.push(valor);
+        }
+    }
+
+    obterTotal() {
+        return this.valores.reduce((acc, v) => acc + v, 0);
+    }
+
+    obterQuantidadeDeValores() {
+        return this.valores.length;
+    }
+
+    obterMedia() {
+        if (this.valores.length === 0) return 0;
+        return (this.obterTotal() / this.obterQuantidadeDeValores()).toFixed(2);
+    }
+}
