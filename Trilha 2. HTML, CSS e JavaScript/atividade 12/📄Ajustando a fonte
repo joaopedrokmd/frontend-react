@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    p {
+      font-weight: bold;
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>O xPhone</h1>
+    <p>Bem-vindo à próxima geração de telefones.</p>
+
+    <h2>Recursos</h2>
+    <p>Este telefone tem o melhor software e hardware de todo o setor.</p>
+
+    <h2>Inovação</h2>
+    <p>Este telefone foi desenvolvido pensando na inovação. Possui bateria com duração de 7 dias. Ele tem a CPU mais rápida já criada.</p>
+</main>
+</body>
+</html>
