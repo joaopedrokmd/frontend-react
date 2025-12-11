@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+    * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+        }
+
+        p span {
+    display: block;     
+    height: 40px;
+    border: 1px solid black;
+    padding: 10px 0;
+    margin: 20px 0;
+    background-color: rgb(200 200 200);
+}
+       
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Inline-block para block</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quasi magni, sapiente! Voluptate <span>corporis</span> quam modi tempore consequuntur atque ullam est iste non nesciunt. Enim delectus eligendi ut eum laudantium provident culpa velit, numquam esse debitis maxime praesentium, at quam odit impedit dolor aut? Nemo culpa sed natus animi earum.
+        </p>
+    </main>
+  </body>
+</html>

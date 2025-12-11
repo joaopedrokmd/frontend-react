@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+     * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+        }
+
+        a {
+    display: inline-block;
+    background-color: #2a3b4c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Testando</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe quasi magni, sapiente! Voluptate <span>corporis</span> quam modi tempore consequuntur atque ullam est iste non nesciunt. Enim delectus eligendi ut eum laudantium provident culpa velit, numquam esse debitis maxime praesentium, at quam odit impedit dolor aut? Nemo culpa sed natus animi earum.
+        </p>
+        <a href="example.com" target="_blank">Iniciar</a>
+    </main>
+  </body>
+</html>
