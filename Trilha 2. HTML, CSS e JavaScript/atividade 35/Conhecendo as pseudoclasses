@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Berners-Lee | Wiki</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: system-ui;
+      }
+
+      ul li {
+          line-height: 1.7;
+      }
+
+      .link-de-recurso {
+        color: #3204AC;
+        padding: 5px 10px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background-color 200ms, color 200ms;
+      }
+
+      .link-de-recurso:hover {
+        background-color: #3204AC;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Tim Berners-Lee</h1>
+
+      <p>Após a formatura, Berners-Lee trabalhou como engenheiro...</p>
+
+      <p>Recursos usados para criar este documento</p>
+
+      <ul>
+        <li><a class="link-de-recurso" href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">WikiPedia</a></li>
+        <li><a class="link-de-recurso" href="https://www.ted.com/speakers/tim_berners_lee" target="_blank">Ted</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>Obrigado por usar nosso wiki.</p>
+    </footer>
+  </body>
+</html>
