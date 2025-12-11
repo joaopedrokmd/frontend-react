@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O xPhone</title>
+</head>
+<body>
+  <main>
+    <h1>O xPhone</h1>
+
+    <p id="intro">Bem-vindo à próxima geração de telefones.</p>
+
+    <h2>Recursos</h2>
+    <p id="recursos">Este telefone tem o melhor software e hardware de todo o setor.</p>
+
+    <h2>Inovação</h2>
+    <p id="inovacao">Este telefone foi desenvolvido pensando na inovação. Possui bateria com duração de 7 dias. Ele tem o melhor chip sem fio a cada compilação e a CPU mais rápida já criada.</p>
+
+  </main>
+</body>
+</html>
