@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    p {
+      width: 150px;
+      border-style: solid;
+      /* Não há height: a altura é auto */
+      margin: 30px; /* espaço externo solicitado */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    Texto antes do parágrafo
+    <p></p>
+    Texto depois do parágrafo
+   </main>
+</body>
+</html>
