@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: system-ui;
+      }
+
+      .avatar {
+        border-radius: 50%; 
+      }
+
+      .avatar--redondo {
+        border-radius: 20px; 
+      }
+
+      .avatar--borda {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Avatar</h1>
+
+        <img
+          src="https://i.imgur.com/TrS9t2r.png"
+          width="80"
+          height="80"
+          alt="Avatar redondo"
+          class="avatar avatar--redondo"
+        >
+        <img
+          src="https://i.imgur.com/TrS9t2r.png"
+          width="80"
+          height="80"
+          alt="Avatar com borda"
+          class="avatar avatar--borda"
+        >
+
+    </main>
+  </body>
+</html>

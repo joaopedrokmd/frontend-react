@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: system-ui;
+      }
+
+      /* Redefinir semântica */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: initial;   
+      }
+
+      /* UI Kit: Tipografia */
+      .titulo {
+        font-size: 24px;
+      }
+
+      .titulo--gd {
+        font-size: 32px;
+      }
+
+      .titulo--pq {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <!-- Aplicando as classes corretamente -->
+        <h1 class="titulo">Carro Tesla</h1>
+
+        <h2 class="titulo--gd">Fotos</h2>
+        <p>A lista de fotos está aqui.</p>
+
+        <h2 class="titulo--gd">Especificações</h2>
+        <ul>
+            <li>Duração da bateria</li>
+            <li>Velocidade</li>
+        </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: system-ui;
+      }
+
+      .avatar {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Avatar</h1>
+
+      <!-- Avatar adicionando aqui -->
+      <img
+        src="https://i.imgur.com/TrS9t2r.png"
+        width="80"
+        height="80"
+        alt="Avatar"
+        class="avatar"
+      >
+    </main>
+  </body>
+</html>
