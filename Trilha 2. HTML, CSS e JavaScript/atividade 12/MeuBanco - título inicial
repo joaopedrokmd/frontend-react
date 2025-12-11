@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    :root {
+      --primary-color: #008288;
+      --light-text-color: #545f7a;
+      --light-border-color: #dae1f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+      margin: 0;
+    }
+
+    html {
+      background-color: var(--primary-color);
+    }
+
+    #splash {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: white;
+      font-weight: normal;
+      position: fixed;
+      bottom: 20px;
+      text-align: center;
+      width: 100%;
+      font-size: 12px; /* ✔ tamanho solicitado */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="splash">
+      <a href="#">
+        <img src="https://res.cloudinary.com/dbfn5lnvx/image/upload/w_250/v1647608532/learnhtmlcss/my-bank/logo.png"
+        width="250"
+        height="250"
+        alt="Logo do MeuBanco">
+      </a>
+    </div>
+    <h1>O maior e mais confiável banco do mundo</h1>
+  </main>
+</body>
+</html>

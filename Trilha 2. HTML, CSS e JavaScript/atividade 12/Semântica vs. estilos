@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 34px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Carro Tesla</h1>
+    
+    <h2>Fotos</h2>
+    <p>O conteúdo das fotos vai aqui.</p>
+    <h2>Especificações</h2>
+    <p>O conteúdo de especificações vai aqui.</p>
+  </main>
+</body>
+</html>
