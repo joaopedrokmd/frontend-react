@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline</title>
+    <style>
+      em {
+        display: inline;
+      }
+    </style>
+</head>
+<body>
+  <main>
+    <p>Olá, </p>
+    <p>mundo</p>
+    <strong>Olá, </strong>
+    <strong>mundo</strong>
+    <p>
+        Desenvolvemos o xPhone com o <em>desempenho</em> em mente. Ele supera consistentemente todos os principais telefones do mercado e espera-se que continue sendo o <strong>líder pelos próximos 10 anos</strong>.
+    </p>
+  </main>
+</body>
+</html>
