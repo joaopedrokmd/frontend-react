@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Blog do xPhone</title>
+</head>
+<body>
+  <main>
+    <h1>O mais novo xPhone</h1>
+
+    <p>O xPhone é o melhor telefone do mercado. Ele vem com recursos inovadores e exclusivos.</p>
+
+    <p>A caixa é feita de ouro e pode suportar uma queda de 10 metros.</p>
+
+    <p>Desenvolvemos o xPhone pensando no desempenho. Ele supera todos os principais telefones do mercado e espera-se que continue sendo o líder pelos próximos 10 anos.</p>
+
+  </main>
+</body>
+</html>
