@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: system-ui;
+      }
+
+      .avatar {
+        border-radius: 50%;
+      }
+      main {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        id="gato"
+        src="https://i.imgur.com/DvR6Wr4.png"
+        width="150"
+        height="150"
+        alt="Gato"
+        class="avatar"
+      >
+    </main>
+  </body>
+</html>

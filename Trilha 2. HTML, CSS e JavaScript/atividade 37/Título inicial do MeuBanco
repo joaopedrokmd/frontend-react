@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Splash</title>
+    <style>
+      :root {
+        --primary-color: #008288;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: var(--primary-color);
+        font-family: system-ui, sans-serif;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+      }
+
+      h1 {
+        color: white !important;
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="splash">
+        <a href="onboarding.html">
+          <img
+            src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1647608532/learnhtmlcss/my-bank/logo.png"
+            width="250"
+            height="250"
+            alt="MyBank logo"
+          />
+        </a>
+      </div>
+      <h1>O banco mais confiável do mundo</h1>
+    </main>
+  </body>
+</html>
