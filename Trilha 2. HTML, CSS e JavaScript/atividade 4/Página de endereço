@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENAI - Florianópolis</title>
+</head>
+<body>
+  <main>
+    <h1>Nosso Endereço</h1>
+    Rodovia SC-401, 3730<br>
+    Bairro Saco Grande<br>
+    Florianópolis, SC<br>
+    CEP 88032-005
+  </main>
+</body>
+</html>
