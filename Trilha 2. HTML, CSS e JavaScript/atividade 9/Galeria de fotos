@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+</head>
+<body>
+  <main>
+     <h1>Galeria de fotos</h1>
+    <p>Confira as fotos que tiramos com nossa nova câmera (classificadas por data)</p>
+    <ol>
+        <li>
+          <a href="#">
+            <img id="img-1"
+                 src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1639397472/learnhtmlcss/images/people-coffee-tea-meeting_skfow5.jpg"
+                 alt="Pessoas reunidas tomando café e conversando.">
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img id="img-2"
+                 src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1639397213/learnhtmlcss/images/flower.jpg"
+                 alt="Flor rosa.">
+          </a>
+        </li>
+    </ol>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+//index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo MeuBanco</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div id="splash">
+        <a href="#">
+          <img
+            src="https://res.cloudinary.com/dbfn5lnvx/image/upload/w_250/v1647608532/learnhtmlcss/my-bank/logo.png"
+            alt="Logotipo do aplicativo MeuBanco"
+            width="250"
+            height="250"
+          >
+        </a>
+      </div>
+      <h1>O maior e mais confiável banco do mundo</h1>
+    </main>
+  </body>
+</html>
+
+//styles.css
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo MeuBanco</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div id="splash">
+        <a href="#">
+          <img
+            src="https://res.cloudinary.com/dbfn5lnvx/image/upload/w_250/v1647608532/learnhtmlcss/my-bank/logo.png"
+            alt="Logotipo do aplicativo MeuBanco"
+            width="250"
+            height="250"
+          >
+        </a>
+      </div>
+      <h1>O maior e mais confiável banco do mundo</h1>
+    </main>
+  </body>
+</html>

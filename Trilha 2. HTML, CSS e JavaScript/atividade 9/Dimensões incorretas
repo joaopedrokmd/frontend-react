@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+</head>
+<body>
+  <main>
+    <h1>Resumo da reunião</h1>
+    <img 
+      src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1639397472/learnhtmlcss/images/people-coffee-tea-meeting_skfow5.jpg" 
+      width="400" 
+      height="267" 
+      alt="Quatro pessoas reunidas.">
+  </main>
+</body>
+</html>
