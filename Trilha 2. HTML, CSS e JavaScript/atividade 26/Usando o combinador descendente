@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      main p {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Tim Berners-Lee</h1>
+      <!-- extraído da página WikiPedia de Tim Berners-Lee -->
+      <p>Após a formatura, Berners-Lee trabalhou como engenheiro em uma empresa de telecomunicações em Poole. Em 1978, ingressou na D. G. Nash em Ferndown, Dorset, onde foi criado um software de composição para impressoras.</p>
+      <hr>
+      <p>Berners-Lee disse: <q>Gosto de manter o trabalho e a vida pessoal separados</q>.</p>
+    </main>
+
+    <footer>
+      <p>Obrigado por usar nosso wiki.</p>
+    </footer>
+  </body>
+</html>
