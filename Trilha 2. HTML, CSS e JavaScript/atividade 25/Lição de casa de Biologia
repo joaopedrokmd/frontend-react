@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lição de casa de Biologia</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Calcule a dosagem da vacina</h1>
+
+      <p>Calcule a dosagem necessária para a vacina H1N1 usando a fórmula abaixo:</p>
+
+      <p><var>D</var> = <var>m</var> × <var>c</var><sup>2</sup></p>
+
+      <p>A tarefa deve ser entregue nas próximas <time datetime="PT5H">5 horas</time>.</p>
+
+      <p>Para perguntas, você pode visitar meu escritório:</p>
+
+      <address>
+           Sala 54B, 2º andar,<br>
+           Nossa Universidade,<br>
+           Nosso país
+      </address>
+    </main>
+  </body>
+</html>

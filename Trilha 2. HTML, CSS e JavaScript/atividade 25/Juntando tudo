@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Com uma taxa de execução de <strong>US$ 22 bilhões</strong>, importa se o Google Cloud ainda perde dinheiro?</h1>
+
+      <p>A nuvem pública do Google está perseguindo serviços concorrentes da Amazon e da Microsoft há tanto tempo que você pode pensar que está ficando sem fôlego. Mas a divisão crítica da Alphabet continua assim, ontem reportando receitas de mais de <strong>US$ 5,5 bilhões</strong> no quarto trimestre. Essa foi a boa notícia. A má notícia foi que o Google Cloud acumulou perdas operacionais no valor de <strong>US$ 890 milhões</strong> ao mesmo tempo.</p>
+
+      <p>Pode ser difícil entender como um negócio com uma taxa de execução superior a <strong>US$ 22 bilhões</strong> está perdendo dinheiro, mas a diretora financeira <em>Ruth Porate</em> explicou isso na teleconferência de resultados com analistas. Basicamente, tudo se resume a gastar dinheiro para ganhar dinheiro, além de competir com seus rivais <em>muito mais bem-sucedidos</em>.</p>
+
+      <blockquote>
+        <p>“Embora a perda operacional e a margem operacional do Google Cloud tenham melhorado em 2021, planejamos continuar investindo agressivamente na nuvem devido à grande oportunidade de mercado que vemos. Continuamos focados no caminho de longo prazo para a lucratividade e, com o tempo, a perda operacional e a margem operacional devem se beneficiar do aumento da escala.”</p>
+        <footer>— Sam Green, Google Cloud.</footer>
+      </blockquote>
+
+      <p>Alex Blue, analista-chefe da Cloud Research, uma empresa que acompanha de perto o mercado do setor de nuvem, diz que <q><mark>a inovação do Google Cloud é muito promissora</mark></q>. Seus clientes estão ansiosos para o que está por vir! <em>Magnífico!</em></p>
+    </main>
+  </body>
+</html>

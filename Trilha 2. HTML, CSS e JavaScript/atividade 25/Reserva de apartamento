@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabine na Árvore na Holanda</title>
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Cabine na Árvore na Holanda</h1>
+
+      <p>Nossa tarifa especial é de <strong>100 euros por noite</strong> <small>(impostos incluídos)</small></p>
+
+      <p>Aqui está uma lista das comodidades disponíveis:</p>
+      <ul>
+        <li>Máquina de lavar</li>
+        <li>Cozinha totalmente equipada</li>
+        <li>Toalhas limpas</li>
+      </ul>
+
+      <p><em>Sua reserva não é reembolsável.</em></p>
+
+      <p>Gostaria de visitar antes de reservar?</p>
+
+      <address>
+        532 Estrada popular,<br>
+        Amsterdã,<br>
+        Os Países Baixos
+      </address>
+
+    </main>
+  </body>
+</html>
