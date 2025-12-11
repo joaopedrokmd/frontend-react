@@ -1,0 +1,59 @@
+//index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O blog do xPhone</title>
+</head>
+<body>
+  <main>
+    <h1>O novo xPhone</h1>
+    <p>
+        O xPhone é o melhor telefone do mercado. Ele vem com <strong>recursos inovadores e exclusivos</strong>.
+    </p>
+    <p>
+        A caixa é feita de ouro e pode suportar uma queda de 10 metros.
+    </p>
+    <p>
+        Desenvolvemos o xPhone com o <em>desempenho</em> em mente. Ele supera consistentemente todos os principais telefones do mercado e espera-se que continue sendo o <strong>líder pelos próximos 10 anos</strong>.
+    </p>
+
+    <h2>Nas notícias</h2>
+    <p>
+      Fomos apresentados em muitas publicações, como 
+      <i>Blog dos telefones</i> e <i>FoneCast</i>.
+    </p>
+  </main>
+</body>
+</html>
+
+//style.css 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O blog do xPhone</title>
+</head>
+<body>
+  <main>
+    <h1>O novo xPhone</h1>
+    <p>
+        O xPhone é o melhor telefone do mercado. Ele vem com <strong>recursos inovadores e exclusivos</strong>.
+    </p>
+    <p>
+        A caixa é feita de ouro e pode suportar uma queda de 10 metros.
+    </p>
+    <p>
+        Desenvolvemos o xPhone com o <em>desempenho</em> em mente. Ele supera consistentemente todos os principais telefones do mercado e espera-se que continue sendo o <strong>líder pelos próximos 10 anos</strong>.
+    </p>
+
+    <h2>Nas notícias</h2>
+    <p>
+      Fomos apresentados em muitas publicações, como 
+      <i>Blog dos telefones</i> e <i>FoneCast</i>.
+    </p>
+  </main>
+</body>
+</html>
