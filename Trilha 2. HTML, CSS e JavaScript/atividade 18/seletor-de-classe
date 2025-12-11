@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o xPhone</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .destaque-novo {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
+</head>
+  <body>
+    <main>
+      <h1>O xPhone</h1>
+      <p>Bem-vindo à próxima geração de telefones.</p>
+
+      <h2>Recursos</h2>
+      <p>Este telefone tem o melhor software e hardware de todo o setor.</p>
+      <ul>
+          <li>Bateria de longa duração</li>
+          <li class="destaque-novo">Construção leve</li>
+          <li class="destaque-novo">2 TB de armazenamento</li>
+          <li class="destaque-novo">5 câmeras</li>
+      </ul>
+    </main>
+  </body>
+</html>
