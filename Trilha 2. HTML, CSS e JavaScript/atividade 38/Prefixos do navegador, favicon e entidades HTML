@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Tutorial do desenvolvedor</h1>
+      <p>Você deve usar a tag &lt;p&gt;</p>
+      <p>O tutorial deve ser concluído antes das 5:40&nbsp;pm</p>
+    </main>
+
+    <footer>
+      <p><small>Todos os direitos reservados &copy; 2023</small></p>
+    </footer>
+  </body>
+</html>
