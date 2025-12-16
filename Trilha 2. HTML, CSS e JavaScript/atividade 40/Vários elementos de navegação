@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Logo</p>
+
+    <!-- Navegação rotulada com aria-labelledby -->
+    <nav aria-labelledby="refeicoes">
+      <p id="refeicoes">Refeições</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/vegetarian">Vegetariano</a></li>
+        <li><a href="/meal-prep">Preparação da refeição</a></li>
+        <li><a href="/fitness">Fitness</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Receita de macarrão</h1>
+    <p>Esta receita ensina como preparar uma deliciosa receita de macarrão</p>
+
+    <h2>Ingredientes</h2>
+    <p>Você precisará desses ingredientes</p>
+    <ul>
+      <li class="carbs">Macarrão</li>
+      <li class="fat">Molho</li>
+      <li class="fat">Queijo</li>
+    </ul>
+
+    <h2>Etapas</h2>
+    <ol>
+      <li>Cozinhe o macarrão</li>
+      <li>Adicione o molho</li>
+    </ol>
+
+    <aside>
+      <p>
+        Esta receita foi revisada por nossa equipe editorial e pela organização
+        Fictionally Healthy Earth.
+      </p>
+    </aside>
+  </main>
+</body>
+</html>

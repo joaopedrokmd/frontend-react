@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Receita de massa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Logo</p>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/vegetarian">Vegetariano</a></li>
+        <li><a href="/meal-prep">Refeições</a></li>
+        <li><a href="/about">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Receita de massa</h1>
+    <p>Aprenda agora a fazer uma deliciosa receita de massa</p>
+    <h2>Ingredientes</h2>
+    <p>Você vai precisar de:</p>
+    <ul>
+      <li class="carbs">Massa</li>
+      <li class="fat">Molho</li>
+      <li class="fat">Queijo</li>
+    </ul>
+    <h2>Passo</h2>
+    <ol>
+      <li>Cozinhe a massa</li>
+      <li>Adicione o molho</li>
+    </ol>
+  </main>
+  <aside>
+    <p>Esta receita foi revisada por nossa equipe.</p>
+  </aside>
+</body>
+</html>
