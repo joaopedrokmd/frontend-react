@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+
+      /* Centraliza a lista */
+      header {
+        text-align: center;
+        padding: 16px 0;
+      }
+
+      /* Remove padding padrão da lista */
+      header ul {
+        padding-left: 0;
+      }
+
+      /* Itens lado a lado */
+      header ul li {
+        display: inline-block;
+        margin: 0 6px;
+      }
+
+      /* Links com área de toque maior */
+      header ul li a {
+        display: inline-block;
+        padding: 10px 18px;
+        text-decoration: none;
+        background-color: #2a3b4c;
+        color: #fff;
+        border-radius: 4px;
+      }
+
+      header ul li a:hover {
+        opacity: 0.85;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="/about.html">Sobre</a></li>
+        <li><a href="/contact.html">Contato</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>Tim Berners-Lee</h1>
+      <p>
+        Após a formatura, Berners-Lee trabalhou como engenheiro em uma empresa de
+        telecomunicações em Poole. Em 1978, ingressou na D. G. Nash em Ferndown,
+        Dorset, onde ajudou a criar software de composição para impressoras.
+      </p>
+
+      <p>
+        Berners-Lee trabalhou como contratante independente no CERN de junho a
+        dezembro de 1980. Em Genebra, propôs um projeto baseado no conceito de
+        hipertexto, para facilitar o compartilhamento e atualização de
+        informações entre pesquisadores. Para demonstrá-lo, ele construiu um
+        sistema protótipo chamado ENQUIRE.
+      </p>
+      <hr />
+      <p>
+        Berners-Lee disse que
+        <q>gosto de manter o trabalho e a vida pessoal separados</q>.
+      </p>
+    </main>
+
+    <footer>
+      <p>Obrigado por usar nosso wiki.</p>
+    </footer>
+  </body>
+</html>

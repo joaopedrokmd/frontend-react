@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livro de receitas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+      }
+
+      /* Lista de instruções com números romanos */
+      #instructions {
+        list-style-type: upper-roman;
+      }
+
+      /* Opcional: estilo dos marcadores */
+      #instructions li::marker {
+        font-weight: bold;
+        color: #008288;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Receita de macarrão</h1>
+      <p>Esta receita ensina como preparar uma deliciosa receita de macarrão</p>
+
+      <h2>Instruções</h2>
+      <p>Siga as instruções abaixo para uma deliciosa massa:</p>
+
+      <ol id="instructions">
+        <li>Cozinhe o macarrão em água fervente.</li>
+        <li>Adicione lentamente o molho de tomate enquanto mexe.</li>
+        <li>Adicione sal e pimenta.</li>
+      </ol>
+    </main>
+  </body>
+</html>

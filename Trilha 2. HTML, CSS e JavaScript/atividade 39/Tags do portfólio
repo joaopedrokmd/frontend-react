@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam Green | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary: #f2d544;
+        --dark-blue: #130c24;
+        --black: #232020;
+        --gray-dark: #666;
+        --gray: #999;
+        --gray-light: #bdbdbd;
+        --beige: #f5f5f1;
+        --gap--lg: 100px;
+        --gap: 80px;
+        --text-color: white;
+        --light-icon: white;
+        --dark-icon: var(--black);
+        --anchor-color: var(--primary);
+      }
+
+      html {
+        background-color: var(--dark-blue);
+        color: var(--text-color);
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      *, :before, :after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Poppins, system-ui, sans-serif;
+        font-size: 1.6rem;
+      }
+
+      .container {
+        max-width: 960px;
+        margin-inline: auto;
+        padding-inline: 20px;
+      }
+
+      .title--sm {
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      .layout-section {
+        padding-bottom: 200px;
+      }
+
+      p {
+        color: var(--gray-light);
+      }
+      .tags {
+        padding-left: 0;        /* remove padding padrão */
+        list-style: none;       /* remove bullets */
+      }
+
+      .tag {
+        --tag-color: var(--gray);
+        display: inline-block;  /* tags lado a lado */
+        margin: 8px 8px 8px 0;
+        padding: 6px 14px;
+        border: 1px solid var(--tag-color);
+        border-radius: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        color: var(--tag-color);
+        transition: transform .2s, color .2s, border-color .2s;
+        position: relative;
+      }
+
+      .tag:hover {
+        --tag-color: var(--primary);
+        color: var(--primary);
+        transform: translateY(-2px);
+      }
+    </style>
+
+    <meta name="description" content="Sam Green | Web developer" />
+  </head>
+
+  <body>
+    <main>
+      <section
+        id="experience"
+        class="layout-section"
+        aria-labelledby="heading-experience"
+      >
+        <div class="container">
+          <h1 id="heading-experience" class="title--sm">
+            Experience
+          </h1>
+
+          <ul class="tags">
+            <li class="tag">Startup advice</li>
+            <li class="tag">Income tax</li>
+            <li class="tag">Sales tax</li>
+            <li class="tag">Minimum Viable Product</li>
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+            <li class="tag">PHP</li>
+            <li class="tag">Laravel</li>
+            <li class="tag">Ruby</li>
+            <li class="tag">Ruby on Rails</li>
+            <li class="tag">React</li>
+            <li class="tag">Vue</li>
+            <li class="tag">MySql</li>
+            <li class="tag">Google Cloud</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
