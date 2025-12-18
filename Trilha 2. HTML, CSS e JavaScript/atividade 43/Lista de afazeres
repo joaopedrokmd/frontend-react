@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Afazeres</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+        }
+        ul ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Tarefas de hoje</h1>
+        <ul id="tarefas">
+            <li>Faça uma corrida</li>
+            <li>Escreva um novo capítulo</li>
+            <li>Andar com o gato:
+                <ul>
+                    <li>Correia</li>
+                    <li>Guloseimas</li>
+                    <li>Água</li>
+                </ul>
+            </li>
+            <li>Preparação de refeições</li>
+        </ul>
+    </main>
+  </body>
+</html>
