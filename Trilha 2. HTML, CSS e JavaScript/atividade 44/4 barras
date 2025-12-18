@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Afazeres</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+        margin: 0; 
+      }
+
+      #wrapper {
+        background-color: red;
+        height: 200px;
+      }
+
+      .rect {
+        height: 50px;
+        border: 1px solid black;
+      }
+
+      #rect1 {
+        background-color: green;
+      }
+
+      #rect2 {
+        background-color: blue;
+      }
+
+      #rect3 {
+        background-color: yellow;
+      }
+
+      #rect4 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="wrapper">
+        <div id="rect1" class="rect"></div>
+        <div id="rect2" class="rect"></div>
+        <div id="rect3" class="rect"></div>
+        <div id="rect4" class="rect"></div>
+      </div>
+    </main>
+  </body>
+</html>
