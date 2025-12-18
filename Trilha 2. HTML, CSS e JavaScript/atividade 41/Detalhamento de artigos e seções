@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Blog</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blog HTML CSS</h1>
+    <p>Este blog aborda tópicos relacionados a HTML e CSS de uma perspectiva única.</p>
+
+    <article>
+      <h2>Use o Axe para testes de acessibilidade</h2>
+      <p>Axe é uma ferramenta automatizada de teste de acessibilidade. Seu uso promove...</p>
+
+      <footer>
+        <p>
+          Publicado
+          <time datetime="2025-12-15">2 dias atrás</time>.
+        </p>
+      </footer>
+    </article>
+
+    <article>
+      <h2>Sempre valide seu código</h2>
+      <p>Certifique-se de validar o código HTML que você escreve, pois isso o ajudará...</p>
+
+      <footer>
+        <p>
+          Publicado
+          <time datetime="2025-12-12">5 dias atrás</time>.
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
