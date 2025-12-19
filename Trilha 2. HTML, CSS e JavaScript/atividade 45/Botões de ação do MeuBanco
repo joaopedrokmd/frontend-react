@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+
+    <style>
+      :root {
+        --light-text-color: #545f7a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+
+      .acao-conteiner {
+        text-align: center;
+        margin: 10px;
+      }
+
+      .acao-rotulo {
+        font-size: 12px;
+        color: var(--light-text-color);
+        margin-top: 10px;
+      }
+
+      .acao-recarga {
+        padding: 23px;
+        border: 1px solid rgba(0 0 0 / 8%);
+        box-shadow: 0px 1px 1px rgba(0 0 0 / 5%);
+        border-radius: 10px;
+        background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1647608527/learnhtmlcss/my-bank/arrow-up.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>Botões de ação</h1>
+
+      <div class="acao-conteiner">
+        <button
+          class="ax-button acao-recarga"
+          aria-labelledby="label-topup"
+        ></button>
+
+        <p class="acao-rotulo" id="label-topup">Recarga</p>
+      </div>
+    </main>
+  </body>
+</html>

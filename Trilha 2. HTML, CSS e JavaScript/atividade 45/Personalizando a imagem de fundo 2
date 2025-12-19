@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+            margin: 0;
+        }
+
+        #banner-do-meu-trabalho {
+            background-image: url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1646917927/learnhtmlcss/images/desk-small.jpg");
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 500px;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Orlando Guimarães</h1>
+        <section>
+            <h2>Meu trabalho</h2>
+            <div id="banner-do-meu-trabalho"></div>
+        </section>
+    </main>
+  </body>
+</html>
