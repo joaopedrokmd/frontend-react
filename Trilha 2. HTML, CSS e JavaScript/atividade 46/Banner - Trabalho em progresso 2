@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+
+      .banner {
+        height: 500px;
+        background-image:
+          linear-gradient(rgba(0 0 0 / 40%), rgba(0 0 0 / 40%)),
+          url("https://res.cloudinary.com/dbfn5lnvx/image/upload/v1646917927/learnhtmlcss/images/nature-medium.jpg");
+        background-size: cover;
+        background-position: top;
+        color: white;
+        text-align: center;
+      }
+
+      .banner h1 {
+        margin: 0;
+        line-height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="banner">
+        <h1>Bem-vindo à natureza</h1>
+      </div>
+    </main>
+  </body>
+</html>
