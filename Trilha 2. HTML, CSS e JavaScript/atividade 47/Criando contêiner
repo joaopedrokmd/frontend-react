@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+
+      .conteiner {
+        max-width: 960px;
+        padding-inline: 20px;
+        margin-inline: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="conteiner">
+        <h1>Com uma taxa de execução de US$ 22 bilhões, faz diferença se o Google Cloud ainda perder dinheiro?</h1>
+
+        <p>
+          A nuvem pública do Google vem perseguindo serviços concorrentes da Amazon e da Microsoft há tanto tempo que você pode pensar que está perdendo o fôlego. Mas a divisão crítica da Alphabet continua, registrando ontem receitas de mais de US$ 5,5 bilhões no quarto trimestre. Essa foi a boa notícia. A má notícia foi que o Google Cloud acumulou perdas operacionais no valor de US$ 890 milhões ao mesmo tempo.
+        </p>
+
+        <p>
+          Pode ser difícil entender como uma empresa com uma taxa de execução superior a US$ 22 bilhões está perdendo dinheiro, mas a diretora financeira Ruth Porate explicou isso na teleconferência de resultados com analistas. Basicamente, tudo se resume a gastar dinheiro para ganhar dinheiro, ao mesmo tempo em que compete com seus rivais muito mais bem-sucedidos.
+        </p>
+
+        <p>
+          “Embora a perda operacional e a margem operacional do Google Cloud tenham melhorado em 2021, planejamos continuar investindo agressivamente em nuvem, devido à grande oportunidade de mercado que vemos. Continuamos focados no caminho de longo prazo para a lucratividade e, com o tempo, a perda operacional e a margem operacional devem se beneficiar do aumento da escala.”
+        </p>
+
+        <p>– Sam Green, Google Cloud.</p>
+
+        <p>
+          Alex Blue, analista-chefe da Cloud Research, uma empresa que acompanha de perto o mercado da indústria de nuvem, diz que "a inovação do Google Cloud é muito promissora". Seus clientes estão ansiosos pelo que está por vir! Magnífico!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
