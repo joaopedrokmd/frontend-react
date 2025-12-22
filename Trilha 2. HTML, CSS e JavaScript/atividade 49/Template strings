@@ -2,7 +2,5 @@ function digaOla(nome) {
   return `Olá, ${nome}`;
 }
 
-
-// Sample usage - do not modify
 console.log(digaOla("Alex")); // "Olá, Alex"
 console.log(digaOla("Sam")); // "Olá, Sam"

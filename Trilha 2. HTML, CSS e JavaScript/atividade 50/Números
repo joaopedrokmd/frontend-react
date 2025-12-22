@@ -1,0 +1,9 @@
+function converterNumeroEmString(numero) {
+  return numero.toString();
+}
+
+
+// exemplo de uso - não modifique
+console.log(converterNumeroEmString(42)); // "42"
+console.log(converterNumeroEmString(97)); // "97"
+console.log(converterNumeroEmString(11)); // "11"

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Sua idade no ano que vem!</h1>
+    </nav>
+
+    <main class="container">
+        <div>
+            <label class="label" for="componente-nome">Entre com a idade</label>
+            <input type="number" class="input" placeholder="Entre com a idade" id="tua-idade" min="0" max="130" autocomplete="off">
+        </div>
+
+        <p>No próximo ano, você terá <span id="prox-idade"></span> anos.</p>
+    </main>
+    <script>
+      
+    function obterProximaIdade(idade) {
+        return Number.parseInt(idade, 10) + 1;
+}
+
+
+        const idade = document.querySelector("#tua-idade");
+        const proximoIdade = document.querySelector("#prox-idade");
+
+        idade.addEventListener("keyup", () => {
+            proximoIdade.textContent = obterProximaIdade(idade.value);
+        });
+    </script>
+  </body>
+</html>
