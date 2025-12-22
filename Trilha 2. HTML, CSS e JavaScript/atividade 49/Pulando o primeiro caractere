@@ -1,0 +1,8 @@
+function pularPrimeiroCaractere(texto) {
+  return texto.substring(1);
+}
+
+
+// Exemplo de uso - não modifique
+console.log(pularPrimeiroCaractere("Xcode")); // "code"
+console.log(pularPrimeiroCaractere("Hello")); // "ello"

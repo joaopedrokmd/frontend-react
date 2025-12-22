@@ -1,0 +1,8 @@
+function pegueMultiplasLinhas() {
+  return `Estou aprendendo JavaScript
+e eu acho isso
+muito divertido!`;
+}
+
+// Código de exemplo - não modifique
+console.log(pegueMultiplasLinhas());

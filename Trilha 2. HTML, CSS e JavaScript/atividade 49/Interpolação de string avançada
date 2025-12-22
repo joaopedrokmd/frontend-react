@@ -1,0 +1,7 @@
+function pegueNomeCompleto(primeiroNome, sobrenome) {
+  return `${primeiroNome} ${sobrenome}`;
+}
+
+// Código de exemplo - não modifique
+console.log(pegueNomeCompleto("Sam", "Doe")); // "Sam Doe"
+console.log(pegueNomeCompleto("Alex", "Blue")); // "Alex Blue"

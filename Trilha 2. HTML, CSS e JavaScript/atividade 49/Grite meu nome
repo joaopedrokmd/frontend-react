@@ -1,0 +1,8 @@
+function griteMeuNome(nome) {
+  return nome.toUpperCase();
+}
+
+// exemplo de uso - não modifique
+console.log(griteMeuNome("Sam")); // "SAM"
+console.log(griteMeuNome("Charley")); // "CHARLEY"
+console.log(griteMeuNome("alex")); // "ALEX"

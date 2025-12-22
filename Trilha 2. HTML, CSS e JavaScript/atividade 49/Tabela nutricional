@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+      :root {
+        --neutral-5: #f2ecee;
+        --neutral-4: #d9cfd3;
+        --primary-1: #2b8379;
+        --primary-2: #19a596;
+      }
+
+      body {
+        background-color: var(--neutral-5);
+        margin: 0;
+        font-family: system-ui;
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .navbar {
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.07);
+        margin-bottom: 20px;
+      }
+
+      .nav-brand {
+        padding-left: 20px;
+        margin: 15px 0;
+        font-weight: 450;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid var(--neutral-4);
+        text-align: left;
+      }
+
+      th {
+        background-color: var(--primary-1);
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="nav-brand">Tabela Nutricional</h1>
+    </nav>
+
+    <main class="container">
+      <table id="tabela-nutricional">
+        <thead>
+          <tr>
+            <th>Nutrição</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <script>
+      // Implementação correta da função
+      function renderizarLinhaTabela(rotulo, valor) {
+        return `
+<tr>
+  <td>${rotulo}</td>
+  <td>${valor}</td>
+</tr>
+`;
+      }
+
+      let htmlParaCarboidratos = renderizarLinhaTabela("Carboidratos", "17g");
+      let htmlParaProteina = renderizarLinhaTabela("Proteina", "19g");
+      let htmlParaGordura = renderizarLinhaTabela("Gordura", "5g");
+
+      const tbody = document.querySelector("#tabela-nutricional tbody");
+      tbody.insertAdjacentHTML("beforeend", htmlParaCarboidratos);
+      tbody.insertAdjacentHTML("beforeend", htmlParaProteina);
+      tbody.insertAdjacentHTML("beforeend", htmlParaGordura);
+    </script>
+  </body>
+</html>

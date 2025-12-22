@@ -1,0 +1,9 @@
+function contaCaracteres(str) {
+  return str.length;
+}
+
+
+// exemplo de uso - não modifique
+console.log(contaCaracteres("Sam")); // 3
+console.log(contaCaracteres("Alex 123")); // 8
+console.log(contaCaracteres("Carlos veio hoje")); // 16

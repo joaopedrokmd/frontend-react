@@ -1,0 +1,8 @@
+function concatenaPrimeirasLetrasDoNome(primeiraLetraDoPrimeiroNome, primeiraLetraDoSobrenome) {
+  return primeiraLetraDoPrimeiroNome + primeiraLetraDoSobrenome;
+}
+
+
+// Exemplo de uso - não modifique
+console.log(concatenaPrimeirasLetrasDoNome("J", "D")); // "JD"
+console.log(concatenaPrimeirasLetrasDoNome("S", "B")); // "SB"

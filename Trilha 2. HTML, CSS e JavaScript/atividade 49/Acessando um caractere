@@ -1,0 +1,8 @@
+function primeiroCaractere(nome) {
+  return nome[0];
+}
+
+
+// exemplo de uso - não modifique
+console.log(primeiroCaractere("Amsterdã")); // "A"
+console.log(primeiroCaractere("Japão")); // "J"

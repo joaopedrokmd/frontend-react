@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+      :root {
+        --neutral-5: #f2ecee;
+        --neutral-4: #d9cfd3;
+        --primary-1: #2b8379;
+        --primary-2: #19a596;
+      }
+
+      body {
+        background-color: var(--neutral-5);
+        margin: 0;
+        font-family: system-ui;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .navbar {
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.07);
+        margin-bottom: 20px;
+      }
+
+      .label {
+        display: block;
+        font-weight: 500;
+      }
+
+      .input {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-left: 7px solid var(--neutral-4);
+      }
+
+      .input:focus {
+        outline: none;
+        border-left-color: var(--primary-1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Variações do Nome</h1>
+    </nav>
+
+    <main class="container">
+      <div>
+        <label class="label" for="teu-nome">Entre com seu nome</label>
+        <input
+          type="text"
+          class="input"
+          placeholder="Seu nome"
+          id="teu-nome"
+          autocomplete="off"
+        />
+      </div>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th width="200">Variações</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Número de caracteres</td>
+            <td id="resposta1"></td>
+          </tr>
+          <tr>
+            <td>Primeiro caractere</td>
+            <td id="resposta2"></td>
+          </tr>
+          <tr>
+            <td>Último caractere</td>
+            <td id="resposta3"></td>
+          </tr>
+          <tr>
+            <td>Minúscula</td>
+            <td id="resposta4"></td>
+          </tr>
+          <tr>
+            <td>Maiúscula</td>
+            <td id="resposta5"></td>
+          </tr>
+          <tr>
+            <td>Capitalizar</td>
+            <td id="resposta6"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script>
+      function obterNumeroDeCaracteres(nome) {
+        return nome.length;
+      }
+
+      function obterPrimeiroCaractere(nome) {
+        return nome[0] || "";
+      }
+
+      function obterUltimoCaractere(nome) {
+        return nome[nome.length - 1] || "";
+      }
+
+      function diminuirLetras(nome) {
+        return nome.toLowerCase();
+      }
+
+      function aumentarLetras(nome) {
+        return nome.toUpperCase();
+      }
+
+      function capitalizar(nome) {
+        return nome[0].toUpperCase() + nome.substring(1).toLowerCase();
+      }
+
+      const resposta1 = document.querySelector("#resposta1");
+      const resposta2 = document.querySelector("#resposta2");
+      const resposta3 = document.querySelector("#resposta3");
+      const resposta4 = document.querySelector("#resposta4");
+      const resposta5 = document.querySelector("#resposta5");
+      const resposta6 = document.querySelector("#resposta6");
+
+      const nome = document.querySelector("#teu-nome");
+
+      nome.addEventListener("keyup", () => {
+        const valor = nome.value;
+
+        resposta1.textContent = obterNumeroDeCaracteres(valor);
+        resposta2.textContent = obterPrimeiroCaractere(valor);
+        resposta3.textContent = obterUltimoCaractere(valor);
+        resposta4.textContent = diminuirLetras(valor);
+        resposta5.textContent = aumentarLetras(valor);
+        resposta6.textContent = valor ? capitalizar(valor) : "";
+      });
+    </script>
+  </body>
+</html>

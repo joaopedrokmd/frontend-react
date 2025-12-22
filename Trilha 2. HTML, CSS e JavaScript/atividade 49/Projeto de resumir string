@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+
+    <style>
+      body {
+        font-family: system-ui;
+        margin: 0;
+      }
+
+      .navbar {
+        background-color: #333;
+        color: white;
+        padding: 16px;
+      }
+
+      .nav-brand {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      #output {
+        margin-top: 16px;
+        font-weight: bold;
+      }
+
+      .input-required {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="nav-brand">Resumir string</h1>
+    </nav>
+
+    <main class="container">
+      <div>
+        <label class="label" for="input">
+          Entre com texto <span class="input-required">*</span>
+        </label>
+
+        <input
+          type="text"
+          class="input"
+          placeholder="Entre com seu texto aqui"
+          id="input"
+          autocomplete="off"
+        />
+      </div>
+
+      <p id="output"></p>
+    </main>
+
+    <script>
+      function resumo(texto) {
+        return texto.substring(0, 10);
+      }
+
+      const input = document.querySelector("#input");
+      const output = document.querySelector("#output");
+
+      input.addEventListener("input", (event) => {
+        output.textContent = resumo(event.currentTarget.value);
+      });
+    </script>
+  </body>
+</html>

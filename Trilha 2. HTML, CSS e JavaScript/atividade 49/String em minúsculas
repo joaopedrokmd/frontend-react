@@ -1,0 +1,8 @@
+function nomeMinusculo(nome) {
+  return nome.toLowerCase();
+}
+
+
+// Exemplo de uso - não modifique
+console.log(nomeMinusculo("Sam")); // "sam"
+console.log(nomeMinusculo("ALEX")); // "alex"

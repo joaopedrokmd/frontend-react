@@ -1,0 +1,9 @@
+function ultimoCaractere(nome) {
+  return nome[nome.length - 1];
+}
+
+
+// Exemplo de uso - não modifique
+console.log(ultimoCaractere("Sam")); // "m"
+console.log(ultimoCaractere("Alex")); // "x"
+console.log(ultimoCaractere("Charley")); // "y"

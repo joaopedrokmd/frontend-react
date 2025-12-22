@@ -1,0 +1,7 @@
+function multiplica(a, b) {
+   return a * b; 
+}
+
+// exemplo de uso - não modifique
+console.log(multiplica(2, 4));
+console.log(multiplica(3, 2));
