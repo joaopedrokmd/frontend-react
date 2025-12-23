@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-marca">Resto da divisão</h1>
+    </nav>
+
+    <main class="container">
+        <div>
+            <label class="label" for="componente-nome">Digite um número</label>
+            <input type="number" class="input" placeholder="Entre número" id="teu-numero" autocomplete="off">
+        </div>
+
+        <p>Par ou ímpar? <strong id="output"></strong>.</p>
+    </main>
+    <script>
+        function parOuImpar(numero) {
+    if (numero % 2 === 0) {
+        return "par";
+    }
+    return "ímpar";
+}
+             
+        const numero = document.querySelector("#teu-numero");
+        const output = document.querySelector("#output");
+
+        numero.addEventListener("keyup", () => {
+            output.textContent = parOuImpar(Number.parseInt(numero.value, 10));
+        });
+    </script>
+  </body>
+</html>

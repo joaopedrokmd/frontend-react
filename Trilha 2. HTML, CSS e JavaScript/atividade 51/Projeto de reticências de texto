@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-marca">Texto em Reticências</h1>
+    </nav>
+
+    <main class="container">
+        <div>
+            <label class="label" for="componente-texto">Entre texto<span class="input-required">*</span></label>
+            <input type="text" class="input" placeholder="Entre com seu texto aqui" id="input" autocomplete="off">
+        </div>
+
+        <p id="output"></p>
+    </main>
+    <script>
+        function obterDescricao(texto) {
+    if (texto.length <= 10) {
+        return texto;
+    }
+
+    return texto.substring(0, 10) + "...";
+}
+
+                
+        const input = document.querySelector("#input");
+        const output = document.querySelector("#output");
+
+        input.addEventListener("input", (event) => {
+            output.textContent = obterDescricao(event.currentTarget.value);
+        });
+    </script>
+  </body>
+</html>
