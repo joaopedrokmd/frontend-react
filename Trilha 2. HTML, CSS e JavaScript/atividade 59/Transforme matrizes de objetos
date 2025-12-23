@@ -1,0 +1,12 @@
+const obterTemperaturas = gravacoes => {
+    return gravacoes.map(gravacao => gravacao.temperatura);
+};
+
+const gravacoes = [{
+     data: "2020-01-03",
+     temperatura: 3
+}, {
+     data: "2020-01-04",
+     temperatura: -4
+}];
+console.log(obterTemperaturas(gravacoes)); // [3, -4]
