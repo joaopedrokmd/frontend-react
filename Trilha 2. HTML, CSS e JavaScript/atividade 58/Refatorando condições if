@@ -1,0 +1,16 @@
+const obterStatus = (anfitriao, usuario, reserva) => {
+    const mensagens = {
+        pendente: `Ei, ${usuario}, estamos aguardando a confirmação de ${anfitriao}.`,
+        confirmado: `Ei, ${usuario}, ${anfitriao} está animado para recebê-lo.`
+    };
+    return mensagens[reserva.status] ?? "Status de reserva desconhecido.";
+}
+
+const reserva1 = {
+     status: "pendente"
+};
+console.log(obterStatus("Sam", "Alex", reserva1)); 
+const reserva2 = {
+     status: "confirmado"
+}
+console.log(obterStatus("Charlie", "Blake", reserva2)); 
