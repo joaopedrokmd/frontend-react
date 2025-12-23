@@ -1,0 +1,12 @@
+const obterNumerosTestesTomados = notas => {
+    return notas.length;
+};
+
+const notas = [{
+     data: "2018-12-13",
+     nota: 14
+}, {
+     data: "2018-12-15",
+     nota: 18
+}]
+console.log(obterNumerosTestesTomados(notas));
