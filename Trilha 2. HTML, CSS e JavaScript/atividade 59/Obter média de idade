@@ -1,0 +1,16 @@
+const obterIdadeMedia = usuarios => {
+    const soma = usuarios.reduce((total, usuario) => {
+        return total + usuario.idade;
+    }, 0);
+
+    return soma / usuarios.length;
+};
+
+const usuarios = [{
+     join_on: "2018-12-13",
+     idade: 14
+}, {
+     join_on: "2018-12-15",
+     idade: 18
+}];
+console.log(obterIdadeMedia(usuarios)); // 16
