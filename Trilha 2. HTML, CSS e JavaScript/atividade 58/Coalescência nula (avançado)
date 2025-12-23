@@ -1,0 +1,7 @@
+const obterNomeCompleto = usuario => {
+    return usuario.info?.nome ?? "N/A";
+}
+
+console.log(obterNomeCompleto({info: {nome: "Sam"}}));
+console.log(obterNomeCompleto({info: null})); 
+console.log(obterNomeCompleto({})); 
