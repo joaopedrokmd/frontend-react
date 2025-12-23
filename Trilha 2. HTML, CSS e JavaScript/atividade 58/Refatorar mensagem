@@ -1,0 +1,6 @@
+const obterMensagemBoasVindas = usuario => {
+    return `Bem vindo, ${usuario.nomeCompleto ?? "usuário"}`;
+}
+
+console.log(obterMensagemBoasVindas({nomeCompleto: "Sam Green"})); 
+console.log(obterMensagemBoasVindas({})); 
