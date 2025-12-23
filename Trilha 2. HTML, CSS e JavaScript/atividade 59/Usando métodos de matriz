@@ -1,0 +1,14 @@
+const obterCursoCompleto = cursos => {
+    return cursos.filter(curso => curso.estaCompleto);
+}
+
+const cursosAmostra = [{
+     idCurso: 1,
+     nome: "Aprenda Programação",
+     estaCompleto: true
+}, {
+     idCurso: 2,
+     nome: "Aprenda JavaScript",
+     estaCompleto: false
+}];
+console.log(obterCursoCompleto(cursosAmostra));
