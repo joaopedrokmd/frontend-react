@@ -1,0 +1,7 @@
+const obterNomeCompleto = usuario => {
+    return usuario.info?.nome?.toLowerCase() ?? "usuário";
+}
+
+console.log(obterNomeCompleto({info: {nome: "ALEX"}})); 
+console.log(obterNomeCompleto({info: null})); 
+console.log(obterNomeCompleto({})); 
