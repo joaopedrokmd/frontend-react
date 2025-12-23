@@ -1,0 +1,8 @@
+const obterProduto = (a, b) => {
+    console.log({ a, b });
+    let produto = a * b;
+    console.log({ produto });
+    return produto;
+}
+
+obterProduto(2, 3);
