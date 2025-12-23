@@ -1,0 +1,7 @@
+const obterValoresEmMaiusculas = curso => {
+    return Object.values(curso).map(valor => valor.toUpperCase());
+}
+
+console.log(obterValoresEmMaiusculas({nome: "Aprenda JavaScript"})); 
+console.log(obterValoresEmMaiusculas({nome: "Aprenda JavaScript", categoria: "Programação"})); 
+console.log(obterValoresEmMaiusculas({})); 
