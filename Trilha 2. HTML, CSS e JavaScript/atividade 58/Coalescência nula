@@ -1,0 +1,6 @@
+const obterIdade = usuario => {
+    return usuario.idade ?? "desconhecido";
+}
+
+console.log(obterIdade({idade: 19}));
+console.log(obterIdade({})); 
