@@ -1,0 +1,16 @@
+const obterNomesCompletos = usuarios => {
+    return usuarios.map(usuario => {
+        return `${usuario.nome} ${usuario.sobrenome}`.toUpperCase();
+    });
+};
+
+const usuarios = [{
+     idUsuario: 1,
+     nome: "Sam",
+     sobrenome: "Verde"
+}, {
+     idUsuario: 2,
+     nome: "Alex",
+     sobrenome: "Azul"
+}];
+console.log(obterNomesCompletos(usuarios)); 
