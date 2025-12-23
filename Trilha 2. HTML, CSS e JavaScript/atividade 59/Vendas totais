@@ -1,0 +1,12 @@
+const obterTotalVendas = usuarios => {
+    return usuarios.reduce((total, usuario) => {
+        return total + (usuario.assinatura?.info?.valor ?? 0);
+    }, 0);
+};
+
+const usuarios = [
+     {idUsuario: 1, nome: "Alex"},
+     {idUsuario: 2, nome: "Sam", assinatura: {info: {valor: 59}}},
+     {idUsuario: 3, nome: "Charlie", assinatura: {info: {valor: 31}}}
+];
+console.log(obterTotalVendas(usuarios)); // 90
