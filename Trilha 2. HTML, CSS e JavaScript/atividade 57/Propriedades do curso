@@ -1,0 +1,7 @@
+const obterQuantidadePropriedades = curso => {
+    return Object.keys(curso).length;
+}
+
+console.log(obterQuantidadePropriedades({idQuant: 1, nome: "Aprenda JavaScript", ano: 2021, categoria: "Programação"})); 
+console.log(obterQuantidadePropriedades({nome: "Aprenda JavaScript", categoria: "Programação"})); 
+console.log(obterQuantidadePropriedades({})); 
