@@ -1,0 +1,7 @@
+const obterPropriedadesEmMaiusculas = curso => {
+    return Object.keys(curso).map(chave => chave.toUpperCase());
+}
+
+console.log(obterPropriedadesEmMaiusculas({idCurso: 1, nome: "Aprenda JavaScript", ano: 2021})); 
+console.log(obterPropriedadesEmMaiusculas({nome: "Aprenda JavaScript", categoria: "Programação"})); 
+console.log(obterPropriedadesEmMaiusculas({})); 
