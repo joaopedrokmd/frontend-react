@@ -1,0 +1,7 @@
+const visualizeEntries = curso => {
+    return Object.entries(curso);
+}
+
+console.log(visualizeEntries({idCurso: 1, nome: "Aprenda JavaScript", ano: 2021}));
+console.log(visualizeEntries({nome: "Aprenda JavaScript", categoria: "Programação"}));
+console.log(visualizeEntries({}));
