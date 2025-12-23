@@ -1,0 +1,6 @@
+const obterDetalhesCurso = (curso, detalhe) => {
+    return `O ${detalhe} do curso é ${curso[detalhe]}`;
+}
+
+console.log(obterDetalhesCurso({idCurso: 1, nome: "Aprenda JavaScript", ano: 2021}, "nome"));
+console.log(obterDetalhesCurso({idCurso: 1, nome: "Aprenda JavaScript", ano: 2021}, "ano")); 
