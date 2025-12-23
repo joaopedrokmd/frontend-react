@@ -1,0 +1,6 @@
+const obterUsuario = (idUsuario, nome) => {
+    return { idUsuario, nome };
+}
+
+console.log(obterUsuario(2, "Sam")); 
+console.log(obterUsuario(5, "Alex")); 
