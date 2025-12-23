@@ -1,0 +1,16 @@
+const logNomes = usuarios => {
+    usuarios.forEach(usuario => {
+        console.log(`${usuario.nome} ${usuario.sobrenome}`);
+    });
+};
+
+const usuariosAmostra = [{
+     idUsuario: 1,
+     nome: "Sam",
+     sobrenome: "Verde"
+}, {
+     idUsuario: 2,
+     nome: "Alex",
+     sobrenome: "Azul"
+}];
+logNomes(usuariosAmostra); 
