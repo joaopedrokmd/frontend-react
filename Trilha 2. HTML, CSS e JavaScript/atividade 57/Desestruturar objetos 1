@@ -1,0 +1,10 @@
+const obterLatLng = localizacaoUsuario => {
+    const { lat, lng } = localizacaoUsuario;
+    return `A latitude é ${lat} e a longitude é ${lng}`;
+}
+
+const localizacaoUsuario = {
+     lat: 24.235235,
+     lng: 2.5734
+};
+console.log(obterLatLng(localizacaoUsuario));
