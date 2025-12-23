@@ -1,0 +1,6 @@
+const obterApps = (aplicativos1, aplicativos2) => {
+    return [...aplicativos1, ...aplicativos2];
+}
+
+console.log(obterApps(["Calculadora", "WhatsApp"], ["Chrome", "Firefox"]));
+

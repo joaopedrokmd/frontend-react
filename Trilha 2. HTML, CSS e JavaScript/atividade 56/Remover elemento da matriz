@@ -1,0 +1,7 @@
+const removePrimeiroApp = apps => {
+    apps.splice(0, 1);
+    return apps;
+}
+
+const apps = ["Calculadora", "WhatsApp", "Chrome", "Firefox"];
+console.log(removePrimeiroApp(apps)); 

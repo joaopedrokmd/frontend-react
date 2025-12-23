@@ -1,0 +1,6 @@
+const somaNumeros = numeros => {
+    return numeros.reduce((total, numero) => total + numero, 0);
+}
+
+console.log(somaNumeros([10, 20, 30])); // 60
+console.log(somaNumeros([2, 4, 2, 10])); // 18

@@ -1,0 +1,7 @@
+const resetApps = apps => {
+    apps.length = 0;
+    return apps;
+};
+
+const apps = ["Calculadora", "Whatsapp", "Chrome", "Firefox"];
+console.log(resetApps(apps)); 

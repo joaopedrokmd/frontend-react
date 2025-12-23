@@ -1,0 +1,7 @@
+const deveAjustarNotas = notas => {
+    return notas.some(nota => nota < 10);
+};
+
+console.log(deveAjustarNotas([12, 15, 10]));
+console.log(deveAjustarNotas([12, 8, 15]));  
+console.log(deveAjustarNotas([9, 7, 10]));   

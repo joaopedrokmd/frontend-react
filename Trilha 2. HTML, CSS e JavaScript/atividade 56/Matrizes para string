@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Tabela Nutricional</h1>
+    </nav>
+
+    <main class="container">
+        <table class="table" id="tabela-nutricional">
+            <thead>
+                <tr>
+                    <th>Alimento</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script>
+        const renderizaLinhasTabela = linhas => {
+            return linhas
+              .map(linha => `
+                <tr>
+                  <td>${linha[0]}</td>
+                  <td>${linha[1]}</td>
+                </tr>
+              `)
+              .join("");
+        };
+
+        const data = [
+          ["Carbo", "17g"],
+          ["Proteína", "19g"],
+          ["Gordura", "5g"]
+        ];
+
+        const html = renderizaLinhasTabela(data);
+
+        const tbody = document.querySelector("#tabela-nutricional tbody");
+        tbody.insertAdjacentHTML("beforeend", html);
+    </script>
+  </body>
+</html>

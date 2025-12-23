@@ -1,0 +1,7 @@
+const obterNomeCompleto = usuario => {
+    const [nome, sobrenome] = usuario;
+    return `${nome} ${sobrenome}`;
+}
+
+console.log(obterNomeCompleto(["Samuel", "Alves"])); 
+console.log(obterNomeCompleto(["Alex", "Dias"]));   

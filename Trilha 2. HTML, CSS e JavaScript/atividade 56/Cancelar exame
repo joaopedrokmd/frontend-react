@@ -1,0 +1,7 @@
+const deveCancelarExame = notas => {
+    return notas.every(nota => nota >= 18);
+};
+
+console.log(deveCancelarExame([10, 12, 10, 14]));
+console.log(deveCancelarExame([18, 15]));         
+console.log(deveCancelarExame([19, 18, 18]));     

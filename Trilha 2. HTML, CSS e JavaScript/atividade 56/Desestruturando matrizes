@@ -1,0 +1,7 @@
+const obterStringLocalizacao = localizacao => {
+    const [lat, lng] = localizacao;
+    return `A latitude é ${lat} e a longitude é ${lng}`;
+}
+
+const localizacao = [24.235235, 2.5734];
+console.log(obterStringLocalizacao(localizacao));
