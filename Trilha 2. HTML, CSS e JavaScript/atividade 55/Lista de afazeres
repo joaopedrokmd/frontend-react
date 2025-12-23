@@ -1,0 +1,6 @@
+const obterQuantosAfazeres = afazeres => {
+  return afazeres.split(",").length;
+};
+
+console.log(obterQuantosAfazeres("Lavar, Lavar louça, Limpar mesa")); // 3
+console.log(obterQuantosAfazeres("Alimentar gato, desengordurar corrente de bicicleta"));

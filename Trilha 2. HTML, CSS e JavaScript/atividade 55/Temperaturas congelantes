@@ -1,0 +1,5 @@
+const obterTemperaturasCongelantes = temperaturas => {
+    return temperaturas.filter(temperatura => temperatura < 0);
+}
+console.log(obterTemperaturasCongelantes([-5, 12, 3])); // [-5]
+console.log(obterTemperaturasCongelantes([1, -3, -2, 4, 10])); // [-3, -2]

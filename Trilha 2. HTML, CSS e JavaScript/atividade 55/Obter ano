@@ -1,0 +1,6 @@
+const obterAno = (anos, anoProcurado) => {
+    return anos.find(ano => ano === anoProcurado);
+}
+
+console.log(obterAno([2019, 2020, 2021], 2020)); // 2020
+console.log(obterAno([2019, 2020, 2021], 1990)); // undefined

@@ -1,0 +1,7 @@
+const obterMensagem = mensagem =>
+  mensagem.endsWith(".") ? mensagem : mensagem + ".";
+
+console.log(obterMensagem("Olá, mundo")); // "Olá, mundo."
+console.log(obterMensagem("Bem-vindo ao lar.")); // "Bem-vindo ao lar."
+console.log(obterMensagem("Funciona")); // "Funciona."
+console.log(obterMensagem("Sim. Correto")); // "Sim. Correto."

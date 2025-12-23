@@ -1,0 +1,17 @@
+const obterUnidade = texto => {
+  if (texto.includes("°C")) {
+    return "Celsius";
+  }
+
+  if (texto.includes("°F")) {
+    return "Fahrenheit";
+  }
+
+  return "N/A";
+};
+
+console.log(obterUnidade("Hoje está fazendo 15°C")); 
+console.log(obterUnidade("Ontem fez 90°F")); 
+console.log(obterUnidade("Por que está fazendo 20°C?")); 
+console.log(obterUnidade("Você está certo de que vai fazer 55°F?")); 
+console.log(obterUnidade("É esperado que esteja frio.")); 

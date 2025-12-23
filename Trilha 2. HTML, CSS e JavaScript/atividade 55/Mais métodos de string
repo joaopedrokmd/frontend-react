@@ -1,0 +1,10 @@
+const obterSlug = nome => {
+  return nome
+    .toLowerCase()        
+    .slice(0, 15)         
+    .replaceAll(" ", "-");
+};
+
+console.log(obterSlug("Mesa de jantar de fácil montagem")); 
+console.log(obterSlug("mesa IKEA")); 
+console.log(obterSlug("Cama de 200cm")); "

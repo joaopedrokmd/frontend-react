@@ -1,0 +1,25 @@
+const obterNumeroNotas = notas => notas.length;
+
+const obterSomaNotas = notas =>
+    notas.reduce((soma, nota) => soma + nota, 0);
+
+const obterMediaNotas = notas =>
+    notas.length === 0 ? 0 : obterSomaNotas(notas) / notas.length;
+
+const obterNotasAcimaMedia = notas =>
+    notas.filter(nota => nota >= 10);
+
+const obterNotasAbaixoMedia = notas =>
+    notas.filter(nota => nota <= 9);
+
+const obterNotasAumentadas = notas =>
+    notas.map(nota => nota + 1);
+
+const notas = [12, 19, 10, 4, 15, 9];
+
+console.log(obterNumeroNotas(notas));       
+console.log(obterSomaNotas(notas));          
+console.log(obterMediaNotas(notas));         
+console.log(obterNotasAcimaMedia(notas));    
+console.log(obterNotasAbaixoMedia(notas));   
+console.log(obterNotasAumentadas(notas));    

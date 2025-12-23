@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+  </head>
+  <body>
+     <nav class="navbar">
+        <h1 class="nav-brand">Formulário de inscrição</h1>
+     </nav>
+
+     <main class="container">
+        <form>
+            <label class="label" for="component-name">
+              Entre com seu e-mail<span class="input-required">*</span>
+            </label>
+            <input
+              type="text"
+              class="input"
+              placeholder="Entre com seu e-mail"
+              id="input-email"
+              autocomplete="off"
+            >
+        </form>
+        <pre id="output"></pre>
+     </main>
+
+    <script>
+      
+        const getEmail = email => email.trim();
+          
+        const inputEmail = document.querySelector("#input-email");
+        const output = document.querySelector("#output");
+
+        inputEmail.addEventListener("input", () => {
+            const result = getEmail(inputEmail.value);
+            output.textContent = result + " is your email.";
+            console.log(result);
+        });
+    </script>
+  </body>
+</html>

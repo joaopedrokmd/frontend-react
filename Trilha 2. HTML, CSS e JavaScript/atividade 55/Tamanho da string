@@ -1,0 +1,6 @@
+const obterTamanhoString = (strings) => {
+    return strings.map(string => string.length);
+}
+console.log(obterTamanhoString(["a", "abc"]));
+console.log(obterTamanhoString(["Sam", "Alex", "Charlie"])); 
+console.log(obterTamanhoString(["Olá", "Azul"])); 
