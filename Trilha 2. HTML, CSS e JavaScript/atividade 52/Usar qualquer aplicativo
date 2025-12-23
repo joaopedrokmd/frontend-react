@@ -1,0 +1,11 @@
+function useApp(apps, app) {
+    apps.push(app);
+    return apps;
+}
+
+// Exemplo de uso - não modifique
+console.log(useApp(["Clock", "Twitter"], "Firefox")); 
+// ["Clock", "Twitter", "Firefox"]
+
+console.log(useApp([], "Safari")); 
+// ["Safari"]

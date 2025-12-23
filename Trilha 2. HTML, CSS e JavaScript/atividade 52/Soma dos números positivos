@@ -1,0 +1,15 @@
+function somaNumerosPositivos(numeros) {
+    let soma = 0;
+
+    numeros.forEach(function(numero) {
+        if (numero > 0) {
+            soma += numero;
+        }
+    });
+
+    return soma;
+}
+
+// Exemplo de uso - não modifique
+console.log(somaNumerosPositivos([15, -5, 10])); // 25
+console.log(somaNumerosPositivos([-3, 4, -2, 1])); // 5

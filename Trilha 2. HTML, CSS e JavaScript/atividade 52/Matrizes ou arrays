@@ -1,0 +1,6 @@
+function obterMatrizVazia() {
+    return  [];
+}
+
+// Exemplo de uso - não modifique
+console.log(obterMatrizVazia());

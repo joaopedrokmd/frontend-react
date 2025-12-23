@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-marca">Tabela Nutricional</h1>
+    </nav>
+
+    <main class="container">
+        <table class="table" id="tabela-nutricao">
+            <thead>
+                <tr>
+                    <th>Nutrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script>
+        // TODO: crie a função "renderizarTabelaLinhas"
+       function renderizarTabelaLinhas(linhas) {
+    let html = "";
+
+    linhas.forEach(function(linha) {
+        const rotulo = linha[0];
+        const valor = linha[1];
+
+        html += `
+<tr>
+    <td>${rotulo}</td>
+    <td>${valor}</td>
+</tr>`;
+    });
+
+    return html;
+}
+
+                
+        const data = [["Carbohidratos", "17g"], ["Proteinas", "19g"], ["Gorduras", "5g"]];
+
+        const html = renderizarTabelaLinhas(data);
+
+        const tbody = document.querySelector("#tabela-nutricao tbody");
+        tbody.insertAdjacentHTML("beforeend", html);
+    </script>
+  </body>
+</html>

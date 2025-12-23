@@ -1,0 +1,8 @@
+function logUserIds(userIds) {
+    userIds.forEach(function(id) {
+        console.log(id);
+    });
+}
+
+// Exemplo de uso - não modifique
+logUserIds([10, 15, 14]); // deve registrar cada id de usuário no console

@@ -1,0 +1,9 @@
+function loopAtravesElementos(elementos) {
+    elementos.forEach(function(elemento) {
+        console.log(elemento);
+    });
+}
+
+// Exemplo de uso - não modifique
+loopAtravesElementos(["Sam", "Charlie", "Alex"]);
+

@@ -1,0 +1,7 @@
+function obterNumberoElementos(elementos) {
+    return elementos.length;
+}
+
+// Exemplo de uso - não modifique
+console.log(obterNumberoElementos(['a', 'b', 'c'])); // 3
+console.log(obterNumberoElementos([])); // 0

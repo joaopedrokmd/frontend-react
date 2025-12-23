@@ -1,0 +1,8 @@
+function obterUltimoApp(apps) {
+    return apps[0];
+}
+
+
+// Exemplo de uso - não modifique
+console.log(obterUltimoApp(["Chrome", "Relógio", "Twitter"])); // "Twitter"
+console.log(obterUltimoApp(["Safari", "Contatos"])); // "Contatos"

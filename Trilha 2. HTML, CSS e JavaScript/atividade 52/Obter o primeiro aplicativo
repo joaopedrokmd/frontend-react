@@ -1,0 +1,7 @@
+function obterPrimeiroApp(apps) {
+    return apps[0];
+}
+
+// Exemplo de uso - não modifique
+console.log(obterPrimeiroApp(["Chrome", "Relógio", "Twitter"])); // "Chrome"
+console.log(obterPrimeiroApp(["Relógio", "Contatos"])); // "Relógio"

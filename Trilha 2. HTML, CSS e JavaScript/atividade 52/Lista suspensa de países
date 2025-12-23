@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-marca">Países</h1>
+    </nav>
+
+    <main class="container">
+        <form>
+            <label>Escolha o país</label>
+            <select id="paises-dropdown"></select>
+        </form>
+    </main>
+    <script>
+        //função "obterDropdown"
+       function obterDropdown(paises) {
+    let html = '<option value="">Por favor, selecione</option>';
+
+    paises.forEach(function(pais) {
+        html += `<option value="${pais.toLowerCase()}">${pais}</option>`;
+    });
+
+    return html;
+}
+
+                
+        const paises = ["Holanda", "Japão", "Mongólia"];
+
+        const html = obterDropdown(paises);
+
+        const select = document.querySelector("#paises-dropdown");
+        select.innerHTML = html;
+    </script>
+  </body>
+</html>

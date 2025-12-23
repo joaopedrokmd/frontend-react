@@ -1,0 +1,11 @@
+function useCalculadora(apps) {
+    apps.push("Calculadora");
+    return apps;
+}
+
+// Exemplo de uso - não modifique
+console.log(useCalculadora(["Relógio", "Twitter"])); 
+// ["Relógio", "Twitter", "Calculadora"]
+
+console.log(useCalculadora(["Tempo"])); 
+// ["Tempo", "Calculadora"]
