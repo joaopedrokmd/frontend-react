@@ -1,0 +1,7 @@
+const obterPrimeiraNota = dados => {
+    return dados.resultados?.notas?.[0];
+}
+
+console.log(obterPrimeiraNota({resultados: {notas:[ 18, 14, 19]}}));
+console.log(obterPrimeiraNota({resultados: {}})); 
+console.log(obterPrimeiraNota({})); 
