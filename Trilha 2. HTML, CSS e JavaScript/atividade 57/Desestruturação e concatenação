@@ -1,0 +1,13 @@
+const mergeOpcoes = (opcoes, opcoesPadronizadas) => {
+    return { ...opcoesPadronizadas, ...opcoes };
+}
+
+const opcoes = {
+     tabSize: 4,
+};
+const opcoesPadronizadas = {
+     indentation: 'tab',
+     tabSize: 2,
+     language: 'javascript',
+};
+console.log(mergeOpcoes(opcoes, opcoesPadronizadas)); 
