@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="" class="nav-destaque">Estatística da Cidade</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">Sobre nós</a></li>
+        <li><a href="" class="nav-item btn btn-default">Registrar</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+        <p>Aprenda mais sobre nossa empresa.</p><br />
+        <select id="cidade-selecionada">
+            <option value="">Selecione a cidade</option>
+            <option value="amsterdam">Amsterdã</option>
+            <option value="berlin">Berlim</option>
+        </select>
+        <div class="card"><div><span id="contagem"></span> cidadãos podem votar em <span id="nome-cidade"></span></div></div>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" target="_blank">Sobre nós</a>
+        <a href="contact.html" target="_blank">Contato</a>
+    </footer>
+    <script>
+        // TODO: complete a função "obterContagemVotantes"
+        function obterContagemVotantes(idades) {
+    return idades.filter(function(idade) {
+        return idade >= 18;
+    }).length;
+}                       
+        const cidade = document.querySelector("#cidade-selecionada");
+        const contagem = document.querySelector("#contagem");
+        const nomeCidade = document.querySelector("#nome-cidade");
+
+        cidade.addEventListener("change", () => {
+            if (!cidade.value) {
+                return false;
+            }
+            fetch(`https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/city-stats/${cidade.value}.json`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    nomeCidade.textContent = cidade.options[cidade.selectedIndex].textContent;
+                    contagem.textContent = obterContagemVotantes(data);
+                });
+        });
+    </script>
+  </body>
+</html>

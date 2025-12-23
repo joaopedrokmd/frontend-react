@@ -1,0 +1,12 @@
+const somaNotas = (notas) => {
+    let soma = 0;
+
+    notas.forEach(nota => {
+        soma += nota;
+    });
+
+    return soma;
+};
+
+console.log(somaNotas([15, 5, 10])); // 30
+console.log(somaNotas([12, 10, 13, 19])); // 54

@@ -1,0 +1,8 @@
+function obterDetalhesProduto() {
+    return {
+        idProduto: 1,
+        titulo: "Camiseta Básica",
+        emEstoque: true
+    };
+}
+console.log(obterDetalhesProduto());

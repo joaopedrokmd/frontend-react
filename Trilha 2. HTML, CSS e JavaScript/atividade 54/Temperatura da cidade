@@ -1,0 +1,6 @@
+function obterTempo(cidade) {
+    return `Atualmente faz ${cidade.valor} graus em ${cidade.nome}`;
+}
+
+console.log(obterTempo({ nome: "Amsterdã", valor: 3 }));
+console.log(obterTempo({ nome: "Brasilia", valor: 24 }));

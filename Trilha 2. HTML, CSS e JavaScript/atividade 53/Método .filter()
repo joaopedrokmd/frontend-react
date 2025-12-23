@@ -1,0 +1,8 @@
+function obterTemperaturasPositivas(temperaturas) {
+    return temperaturas.filter(function(temperatura) {
+        return temperatura > 0;
+    });
+}
+
+console.log(obterTemperaturasPositivas([-5, 12, 3])); // [12, 3]
+console.log(obterTemperaturasPositivas([1, -3, -2, 4, 10])); // [1, 4, 10]

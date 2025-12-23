@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-brand">App Sala de Aula</h1>
+    </nav>
+
+    <main class="container">
+        <form id="notas-form">
+            <label class="label" for="sua-nota">Digite sua nota</label>
+            <input type="number" min="0" max="20" class="input" required placeholder="nota (0 and 20)" id="sua-nota">
+            <input type="submit" class="btn btn-accent" value="Add" />
+        </form>
+
+        <table border="1" id="tabela-stats" class="table table-center">
+            <thead>
+                <tr>
+                    <th width="33%">Quantidade de provas realizadas</th>
+                    <th width="33%">Soma das notas</th>
+                    <th>Nota média</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <table border="1" id="tabela-stats2" class="table table-center">
+            <thead>
+                <tr>
+                    <th width="33%">Notas acima da nota de corte</th>
+                    <th width="33%">Notas abaixo da nota de corte</th>
+                    <th>Notas aumentadas</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+        <script>
+        function obterNumeroNotas(notas) {
+    return notas.length;
+}
+
+function obterSomaNotas(notas) {
+    let soma = 0;
+
+    notas.forEach(function(nota) {
+        soma += nota;
+    });
+
+    return soma;
+}
+
+function obterValorMedia(notas) {
+    if (notas.length === 0) {
+        return 0;
+    }
+
+    return obterSomaNotas(notas) / obterNumeroNotas(notas);
+}
+
+function obterNotasAcimaNotaCorte(notas) {
+    return notas.filter(function(nota) {
+        return nota >= 10;
+    });
+}
+
+function obterNotasAbaixoNotaCorte(notas) {
+    return notas.filter(function(nota) {
+        return nota <= 9;
+    });
+}
+
+function obterNotasAumentadas(notas) {
+    return notas.map(function(nota) {
+        return nota + 1;
+    });
+}
+            
+        const notasForm = document.querySelector("#notas-form");
+        const suaNota = document.querySelector("#sua-nota");
+
+        const notas = [12, 19, 10, 4, 15, 9];
+
+        const renderStats2Table = notas => {
+            const tbody = document.querySelector("#tabela-stats2 tbody");
+            tbody.innerHTML = `<tr>
+                <td>${obterNotasAcimaNotaCorte(notas)}</td>
+                <td>${obterNotasAbaixoNotaCorte(notas)}</td>
+                <td>${obterNotasAumentadas(notas)}</td>
+            </tr>`;
+        }
+
+        const renderStatsTable = notas => {
+            const tbody = document.querySelector("#tabela-stats tbody");
+            tbody.innerHTML = `<tr>
+                <td>${obterNumeroNotas(notas)}</td>
+                <td>${obterSomaNotas(notas)}</td>
+                <td>${obterValorMedia(notas)}</td>
+            </tr>`;
+        }
+
+        const render = notas => {
+            console.log("notas: " + notas.join(', '));
+            renderStatsTable(notas);
+            renderStats2Table(notas);
+        }
+
+        notasForm.addEventListener("submit", event => {
+            event.preventDefault();
+            const novaNota = Number.parseInt(suaNota.value, 10);
+            notas.push(novaNota);
+            suaNota.value = "";
+            render(notas);
+        });
+
+        render(notas);
+        </script>
+    </body>
+</html>

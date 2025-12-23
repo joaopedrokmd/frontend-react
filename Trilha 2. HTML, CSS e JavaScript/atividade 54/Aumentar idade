@@ -1,0 +1,12 @@
+function aumentarIdade(pessoa) {
+    pessoa.idade += 1;
+    return pessoa;
+}
+const pessoa = {
+    nome: "Sam",
+    sobrenome: "Doe",
+    idade: 18
+};
+
+console.log(aumentarIdade(pessoa));
+// { nome: "Sam", sobrenome: "Doe", idade: 19 }

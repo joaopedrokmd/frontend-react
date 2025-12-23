@@ -1,0 +1,8 @@
+function obterAnosImpares(anos) {
+    return anos.filter(function(ano) {
+        return ano % 2 !== 0;
+    });
+}
+
+console.log(obterAnosImpares([2019, 2020, 2021])); // [2019, 2021]
+console.log(obterAnosImpares([2000, 2015, 2018, 2020])); // [2015]

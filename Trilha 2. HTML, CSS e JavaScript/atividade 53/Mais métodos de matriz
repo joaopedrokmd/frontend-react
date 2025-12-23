@@ -1,0 +1,6 @@
+ function appUsado(apps, app) {
+    return apps.includes(app);
+}
+
+console.log(appUsado(["Twitter", "Calculadora"], "Calculadora")); // true
+console.log(appUsado(["Relógio", "Calculadora"], "Safari")); // false

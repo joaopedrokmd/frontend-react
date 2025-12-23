@@ -1,0 +1,9 @@
+function logUserIds(userIds = []) {
+    userIds.forEach(function(userId) {
+        console.log(userId);
+    });
+
+    return userIds; 
+}
+logUserIds([10, 15, 14]);
+logUserIds(); 

@@ -1,0 +1,23 @@
+<script>
+    // complete a função "renderizaLinhaTabela"
+    function renderizaLinhaTabela(detalhes) {
+        return `
+<tr>
+    <td>${detalhes.titulo}</td>
+    <td>${detalhes.valor}g</td>
+</tr>`;
+    }
+
+    const carbo = { titulo: "Carbo", valor: 17 };
+    const proteina = { titulo: "Proteina", valor: 19 };
+    const gordura = { titulo: "Gordura", valor: 5 };
+
+    let html = "";
+
+    html += renderizaLinhaTabela(carbo);
+    html += renderizaLinhaTabela(proteina);
+    html += renderizaLinhaTabela(gordura);
+
+    const tbody = document.querySelector("#tabela-nutricional tbody");
+    tbody.insertAdjacentHTML("beforeend", html);
+</script>

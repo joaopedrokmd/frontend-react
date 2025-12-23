@@ -1,0 +1,8 @@
+const getDropdown = (countries) => {
+    return `
+<option value="">Por favor, selecione</option>
+${countries
+    .map(country => `<option value="${country.toLowerCase()}">${country}</option>`)
+    .join("")}
+`;
+};

@@ -1,0 +1,4 @@
+const triplo = (valor) => valor * 3;
+
+console.log(triplo(3)); // 9
+console.log(triplo(10)); // 30

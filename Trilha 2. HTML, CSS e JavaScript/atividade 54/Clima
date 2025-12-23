@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Temperatura em <span id="country"></span></h1>
+    </nav>
+
+    <main class="container">
+        <div class="card">
+            <h2 id="city-country"></h2>
+            <div class="icon-temp">
+                <img src="" alt="weather icon" id="icon" />
+                <h3><span id="temperature"></span>&deg;C</h3>
+            </div>
+        </div>
+    </main>
+    <script>
+    function getCountry(data) {
+        console.log(data);
+        return data.location.country;
+    }
+
+    function getIcon(data) {
+        console.log(data);
+        return data.current.weather_icons[0];
+    }
+
+    function getTemperature(data) {
+        console.log(data);
+        return data.current.temperature;
+    }     
+        const icon = document.querySelector("#icon");
+        const temperature = document.querySelector("#temperature");
+        const country = document.querySelector("#country");
+
+        fetch(`https://learn-javascript-demo-default-rtdb.firebaseio.com/weather/amsterdam.json`)
+        .then(response => response.json())
+        .then(data => {
+            icon.src = getIcon(data);
+            temperature.textContent = getTemperature(data);
+            country.textContent = getCountry(data);
+        })
+        .catch(error => console.error(error));
+    </script>
+  </body>
+</html>
