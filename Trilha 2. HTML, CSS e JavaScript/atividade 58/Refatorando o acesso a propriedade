@@ -1,0 +1,6 @@
+const obterValorPagamento = usuario => {
+    return usuario.pagamento?.detalhes?.valor ?? 0;
+}
+
+console.log(obterValorPagamento({idUsuario: 1, nome: "Alex"})); 
+console.log(obterValorPagamento({idUsuario: 2, nome: "Sam", pagamento: {detalhes: {valor: 59}}})); 
