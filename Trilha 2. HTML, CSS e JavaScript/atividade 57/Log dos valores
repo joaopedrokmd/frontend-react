@@ -1,0 +1,7 @@
+const logValores = curso => {
+    Object.keys(curso).forEach(chave => {
+        console.log(curso[chave]);
+    });
+}
+
+logValores({idCuro: 1, nome: "Aprenda JavaScript", ano: 2021}); 
