@@ -1,0 +1,14 @@
+const obterSomaNotas = resultados => {
+    return resultados.reduce((soma, resultado) => {
+        return soma + resultado.nota;
+    }, 0);
+};
+
+const resultados = [{
+     data: "2018-12-13",
+     nota: 14
+}, {
+     data: "2018-12-15",
+     nota: 18
+}]
+console.log(obterSomaNotas(resultados)); // 32
