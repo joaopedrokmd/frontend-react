@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <h1 class="nav-brand">Tradução Simples</h1>
+    </nav>
+
+    <main class="container">
+        <form>
+            <label>Escolha uma língua</label>
+            <select id="paises">
+                <option value="">Por favor, selecione</option>
+                <option value="dutch">Holandês</option>
+                <option value="french">Francês</option>
+                <option value="english">Inglês</option>
+            </select>
+        </form>
+        <p id="output"></p>
+    </main>
+    <script>
+        const obterTraducao = lingua => {
+    return traducoes.bemvindo?.[lingua] ?? traducoes.bemvindo.english;
+}
+        const dropdown = document.querySelector("#paises");
+        const output = document.querySelector("#output");
+
+        dropdown.addEventListener("change", () => {
+            output.textContent = obterTraducao(dropdown.value);
+        });
+
+        const traducoes = {
+            bemvindo: {
+                dutch: "Welkom",
+                french: "Bienvenue",
+                english: "Welcome"
+            }
+        }
+    </script>
+  </body>
+</html>
