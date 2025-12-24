@@ -1,0 +1,13 @@
+class Pessoa {
+    constructor(nome, sobrenome) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+}
+
+const criarPessoa = (nome, sobrenome) => {
+    return new Pessoa(nome, sobrenome);
+};
+
+console.log(criarPessoa("Silvia", "Duarte"));
+console.log(criarPessoa("Celso", "Guimarães"));
