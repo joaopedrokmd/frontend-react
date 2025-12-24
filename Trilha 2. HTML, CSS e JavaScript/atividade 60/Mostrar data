@@ -1,0 +1,9 @@
+const showData = () => {
+    try {
+        return obterData();
+    } catch (erro) {
+        return "Não foi possível obter a data";
+    }
+}
+
+console.log(showData());
