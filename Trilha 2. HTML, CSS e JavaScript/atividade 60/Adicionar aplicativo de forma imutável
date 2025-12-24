@@ -1,0 +1,7 @@
+const adicionarApp = (apps, app) => {
+    return [...apps, app];
+};
+
+const appsOriginais = ["Calculator", "Phone"];
+console.log(adicionarApp(appsOriginais, "Smart lights")); // ["Calculator","Phone", "Smart lights"] (immutable)
+console.log(appsOriginais); // ["Calculator", "Phone"] (imutável)
