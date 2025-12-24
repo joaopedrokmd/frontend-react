@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstração de Promise</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Demonstração de Promise</h1>
+    <button id="complete-btn">Concluir</button>
+    <button id="fail-btn">Falhar</button>
+
+    <script>
+      const esperarPeloClickCompleto = () => {
+        return new Promise((resolve, reject) => {
+          document.querySelector("#complete-btn").addEventListener("click", () => {
+            resolve();
+          });
+
+          document.querySelector("#fail-btn").addEventListener("click", () => {
+            reject();
+          });
+        });
+      };
+
+      esperarPeloClickCompleto()
+        .then(() => {
+          console.log("Clique completo");
+        })
+        .catch(() => {
+          console.error("Clique falhou");
+        });
+    </script>
+  </body>
+</html>
