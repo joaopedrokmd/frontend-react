@@ -1,0 +1,20 @@
+const obterGrandeGrupos = grupos => {
+    return grupos.filter(grupo => grupo.detalhes.mensagemContagem > 100);
+}
+
+const gruposAmostra = [{
+     idChat: 1,
+     titulo: "Futebol",
+     detalhes: {
+         mensagemContagem: 30,
+         public: true
+     }
+}, {
+     idChat: 2,
+     titulo: "Família",
+     detalhes: {
+         mensagemContagem: 1014,
+         public: false
+     }
+}];
+console.log(obterGrandeGrupos(gruposAmostra));
