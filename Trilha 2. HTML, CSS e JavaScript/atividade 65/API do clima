@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+    </style>
+  </head>
+  <body>
+     <nav id="navbar">
+      <a href="#" class="nav-brand">App</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">Sobre nós</a></li>
+        <li><a href="" class="nav-item btn btn-default">Registrar</a></li>
+      </ul>
+    </nav>
+    <div class="container" id="main">
+        <h1>Tempo em <span id="city">...</span></h1>
+        <select id="lista-suspensa-cidades">
+            <option value="">City</option>
+            <option value="amsterdam">Amsterdã</option>
+            <option value="berlin">Berlim</option>
+        </select>
+        <p id="resultado">&nbsp;</p>
+    </div>
+    <footer id="empacotador-rodape">
+        <a href="about.html" target="_blank">Sobre nós</a>
+        <a href="contact.html" target="_blank">Contato</a>
+    </footer>
+    <script>
+       const obterClima = cidade => {
+    fetch(
+        `https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/weatherstack/${cidade}.json`
+    )
+        .then(resposta => resposta.json())
+        .then(dados => {
+            mostrarTemperatura(dados.current.temperature);
+        });
+}
+
+        const listaSuspensaDeCidades = document.querySelector("#lista-suspensa-cidades")
+
+        listaSuspensaDeCidades.addEventListener("change",()=>{
+          if(listaSuspensaDeCidades.value) {
+            obterClima(listaSuspensaDeCidades.value);
+          }
+        });
+
+        const resultado = document.querySelector("#resultado");
+        const mostrarTemperatura = temperatura => {
+          resultado.textContent = `Está ${temperatura} graus Celsius.`;
+        }   
+    </script>
+  </body>
+</html>
