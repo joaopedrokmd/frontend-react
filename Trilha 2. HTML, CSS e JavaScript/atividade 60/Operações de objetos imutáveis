@@ -1,0 +1,10 @@
+const cloneConfig = config => {
+    return { ...config };
+}
+
+const configOriginal = {
+    darkTheme: true
+};
+const resultado = cloneConfig(configOriginal);
+console.log(resultado);
+console.log(configOriginal === resultado);  
