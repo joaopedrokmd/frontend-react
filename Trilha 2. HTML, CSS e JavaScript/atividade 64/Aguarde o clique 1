@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demonstração de Promise</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Demonstração de Promise</h1>
+    <button id="complete-btn">Concluir</button>
+
+    <script>
+      const esperePeloClickCompleto = () => {
+        return new Promise(resolve => {
+          document
+            .querySelector("#complete-btn")
+            .addEventListener("click", () => {
+              resolve();
+            });
+        });
+      };
+
+      // Chamada correta da Promise
+      esperePeloClickCompleto().then(() => {
+        console.log("Clique completo");
+      });
+    </script>
+  </body>
+</html>
