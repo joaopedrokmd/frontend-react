@@ -1,0 +1,19 @@
+function Usuario(nome, sobrenome, idade) {
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+    this.idade = idade;
+}
+
+// Função sem arrow function
+Usuario.prototype.obterNomeCompleto = function() {
+    return `${this.nome} ${this.sobrenome}`;
+}
+
+// Função sem arrow function
+Usuario.prototype.podeVotar = function() {
+    return this.idade >= 18;
+}
+
+const usuario = new Usuario("Sara", "Dias", 43);
+console.log(usuario.obterNomeCompleto()); 
+console.log(usuario.podeVotar()); 
