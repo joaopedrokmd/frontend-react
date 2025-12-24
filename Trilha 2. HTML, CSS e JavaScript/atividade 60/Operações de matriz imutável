@@ -1,0 +1,8 @@
+const cloneApps = apps => {
+    return [...apps];
+};
+
+const appsOriginais = ["Calculator", "Phone"];
+const appsCopiados = cloneApps(appsOriginais);
+console.log(appsCopiados); // ["Calculator", "Phone"]
+console.log(appsCopiados === appsOriginais);
