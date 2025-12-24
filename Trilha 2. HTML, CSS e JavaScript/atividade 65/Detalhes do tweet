@@ -1,0 +1,14 @@
+const obterDetalhesTweet = () => {
+    return fetch(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/tweet/1080777336298049537.json"
+    )
+        .then(resposta => resposta.json())
+        .then(dados => {
+            const nomeCompleto = `${dados.author.firstName} ${dados.author.lastName}`;
+            mostrarNomeAutor(nomeCompleto);
+        });
+}
+
+function mostrarNomeAutor(nomeCompleto) {
+    console.log(nomeCompleto);
+}
