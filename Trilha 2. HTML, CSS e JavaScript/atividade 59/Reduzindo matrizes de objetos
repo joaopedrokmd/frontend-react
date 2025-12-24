@@ -1,0 +1,22 @@
+const somaContagemMensagem = grupos => {
+    return grupos.reduce((total, grupo) => {
+        return total + grupo.detalhes.contagemMensagem;
+    }, 0);
+}
+
+const gruposAmostra = [{
+     idT: 1,
+     titulo: "Futebol",
+     detalhes: {
+         contagemMensagem: 30,
+         publico: true
+     }
+}, {
+     idT: 2,
+     titulo: "Família",
+     detalhes: {
+         contagemMensagem: 1014,
+         publico: false
+     }
+}];
+console.log(somaContagemMensagem(gruposAmostra)); 
