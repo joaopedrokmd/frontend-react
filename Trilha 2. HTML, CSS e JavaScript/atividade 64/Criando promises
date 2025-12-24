@@ -1,0 +1,11 @@
+const espereUmSegundo = () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, 1000);
+    });
+}
+
+espereUmSegundo().then(() => {
+    console.log("Pronto!");
+});
