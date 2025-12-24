@@ -1,0 +1,11 @@
+const esperar = (milisegundos) => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, milisegundos);
+    });
+};
+
+esperar(1000).then(() => {
+    console.log("Pronto!");
+});
