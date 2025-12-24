@@ -1,0 +1,29 @@
+<script>
+    const salvarGrade = grade => {
+        return fetch(
+            "https://api.learnjavascript.online/demo/grades.json",
+            {
+                method: "PUT",
+                body: JSON.stringify({
+                    grade: grade
+                })
+            }
+        )
+        .then(resposta => resposta.json())
+        .then(dados => {
+            console.log(dados);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+    };
+
+    const form = document.querySelector("#grades-form");
+    const userGrade = document.querySelector("#user-grade");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+
+        salvarGrade(userGrade.value);
+    }); 
+</script>
