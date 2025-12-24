@@ -1,0 +1,22 @@
+class Curso {
+    constructor(nome, completo) {
+        this.nome = nome;
+        this.completo = completo;
+    }
+
+    obterDescricao() {
+        if (this.completo) {
+            return `Você concluiu o curso ${this.nome}.`;
+        } else {
+            return `Atualmente você está fazendo o curso ${this.nome}.`;
+        }
+    }
+}
+
+const Curso1 = new Curso("JavaScript", false);
+console.log(Curso1.obterDescricao()); 
+// "Atualmente você está fazendo o curso JavaScript."
+
+const Curso2 = new Curso("React", true);
+console.log(Curso2.obterDescricao()); 
+// "Você concluiu o curso React."
