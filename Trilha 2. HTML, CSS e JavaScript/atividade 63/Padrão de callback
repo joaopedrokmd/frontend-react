@@ -1,0 +1,17 @@
+const bemVindoUsuario = (nome, chamadaDeRetorno) => {
+    setTimeout(() => {
+        console.log(`Bem-vindo, ${nome}`);
+        if (chamadaDeRetorno) {
+            chamadaDeRetorno(); // chama o callback no sucesso
+        }
+    }, 1000);
+};
+
+const digaOla = (nome) => {
+    bemVindoUsuario(nome, () => {
+        console.log("Pronto!");
+    });
+};
+
+digaOla("Sam");
+
