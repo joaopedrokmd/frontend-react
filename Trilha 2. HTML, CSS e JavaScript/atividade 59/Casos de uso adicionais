@@ -1,0 +1,18 @@
+const exportarUsuariosVerificados = usuarios => {
+    return usuarios
+        .filter(usuario => usuario.foiVerificado)
+        .map(usuario => usuario.nome)
+        .join(", ");
+}
+
+const usuariosAmostra = [{
+     nome: "Sam",
+     foiVerificado: true
+}, {
+     nome: "Alex",
+     foiVerificado: false
+}, {
+     nome: "Charlie",
+     foiVerificado: true
+}];
+console.log(exportarUsuariosVerificados(usuariosAmostra));
