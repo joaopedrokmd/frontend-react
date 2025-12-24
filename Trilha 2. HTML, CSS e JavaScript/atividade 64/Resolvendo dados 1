@@ -1,0 +1,33 @@
+const obterTemperaturaEm = (cidade) => {
+    return new Promise((resolve, reject) => {
+        if (!cidade || typeof cidade !== "string") {
+            reject("A cidade deve ser uma string");
+        }
+        if (!["florianópolis", "tóquio"].includes(cidade.toLowerCase())) {
+            reject("A cidade deve ser Florianópolis ou Tóquio");
+        }
+
+        // simula request
+        setTimeout(() => {
+            if (cidade.toLowerCase() === "florianópolis") {
+                resolve("Nublado");
+            }
+            if (cidade.toLowerCase() === "tóquio") {
+                resolve("Ensolarado");
+            }
+        }, 1000);
+    });
+};
+
+const logDescricaoTempo = nomeCidade => {
+    obterTemperaturaEm(nomeCidade)
+        .then(descricao => {
+            console.log(descricao);
+        })
+        .catch(erro => {
+            console.error(erro);
+        });
+};
+
+logDescricaoTempo("Florianópolis"); 
+logDescricaoTempo("Tóquio");        
