@@ -1,0 +1,15 @@
+const prepareStatus = (status, local) => {
+    const idUsuario = 42;
+
+    const dados = {
+        idUsuario,
+        status,
+        local
+    };
+
+    return JSON.stringify(dados);
+};
+
+console.log(prepareStatus("Meu primeiro post!", "Florianópolis"));
+console.log(prepareStatus("Olá, mundo!", "Curitiba"));
+
