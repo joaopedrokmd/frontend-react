@@ -1,0 +1,20 @@
+const todosOsGruposPublicos = grupos => {
+    return grupos.every(grupo => grupo.detalhes.ehPublico);
+}
+
+const gruposAmostra = [{
+     idChat: 1,
+     titulo: "Futebol",
+     detalhes: {
+         mensagemContagem: 30,
+         ehPublico: true
+     }
+}, {
+     idChat: 2,
+     titulo: "Família",
+     detalhes: {
+         mensagemContagem: 1014,
+         ehPublico: false
+     }
+}];
+console.log(todosOsGruposPublicos(gruposAmostra));
