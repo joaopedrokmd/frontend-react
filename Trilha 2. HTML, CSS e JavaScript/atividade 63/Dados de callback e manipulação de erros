@@ -1,0 +1,18 @@
+const somaNotas = (notas, chamadaDeRetorno) => {
+    // simulando operações complexas
+    setTimeout(() => {
+        const soma = notas.reduce((total, atual) => total + atual, 0);
+        if (chamadaDeRetorno) {
+            chamadaDeRetorno(soma); // chama o callback com a soma
+        }
+    }, 1000);
+};
+
+const calculeSoma = (notas) => {
+    somaNotas(notas, (resultado) => {
+        console.log(`A soma é: ${resultado}`);
+    });
+};
+
+calculeSoma([18, 10]);
+calculeSoma([15, 10, 20]);
