@@ -1,0 +1,14 @@
+const buscaSimulada = () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve({
+                partiu: false,
+                atraso: true
+            });
+        }, 1000);
+    });
+};
+
+buscaSimulada().then((dados) => {
+    console.log(dados);
+});
