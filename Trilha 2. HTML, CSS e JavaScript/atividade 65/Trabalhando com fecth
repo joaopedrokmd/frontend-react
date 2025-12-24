@@ -1,0 +1,15 @@
+const checaPorNovasNotificacoes = () => {
+    return fetch(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/notifications/new.json"
+    )
+        .then(resposta => resposta.json())
+        .then(dados => {
+            mostreNovasNotificacoes(dados.count);
+        });
+}
+
+function mostreNovasNotificacoes(count) {
+    console.log(`Você tem ${count} novas notificações. Gostaria de ler?`);
+}
+
+checaPorNovasNotificacoes();
