@@ -1,0 +1,8 @@
+const boasVindasAtrasada = nome => {
+    setTimeout(() => {
+        console.log(`Bem-vindo ${nome}!`);
+    }, 2000);
+}
+
+boasVindasAtrasada("Sam");
+boasVindasAtrasada("Alex");
