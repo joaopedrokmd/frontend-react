@@ -1,0 +1,10 @@
+const idadeIncremental = usuario => {
+    usuario.idade += 1;
+}
+
+const usuarioAmostra = {
+    idUsuario: 1,
+    idade: 23
+};
+idadeIncremental(usuarioAmostra);
+console.log(usuarioAmostra);
