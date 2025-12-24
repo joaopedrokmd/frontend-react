@@ -1,0 +1,14 @@
+const obterTotalCarrinho = produtos => {
+    return produtos.reduce((total, produto) => {
+        return total + (produto.preco * produto.quantidade);
+    }, 0);
+}
+
+const amostraProdutos = [{
+     preco: 10,
+     quantidade: 3
+}, {
+     preco: 5,
+     quantidade: 4
+}]
+console.log(obterTotalCarrinho(amostraProdutos)); // 50
