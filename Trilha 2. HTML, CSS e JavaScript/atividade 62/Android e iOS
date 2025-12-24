@@ -1,0 +1,28 @@
+class Celular {
+    constructor(nome, preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    obterDescritivo() {
+        return `O ${this.nome} custa ${this.preco}`;
+    }
+}
+
+class Android extends Celular {
+    obterVersionamento() {
+        return 12;
+    }
+}
+
+class iOS extends Celular {
+    obterVersionamento() {
+        return 15;
+    }
+}
+const galaxy = new Android("Galaxy", 400);
+console.log(galaxy.obterDescritivo()); // "O Galaxy custa 400"
+console.log(galaxy.obterVersionamento()); // 12 (sempre para fones android)
+const iphone = new iOS("iPhone", 500);
+console.log(iphone.obterDescritivo()); // "O iPhone custa 500"
+console.log(iphone.obterVersionamento()); // 15 (sempre para fones iOS)
