@@ -1,0 +1,39 @@
+class Usuario {
+    constructor(nome, sobrenome, idade) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+    }
+
+    obterNomeCompleto() {
+        return `${this.nome} ${this.sobrenome}`;
+    }
+
+    podeVotar() {
+        return this.idade >= 18;
+    }
+}
+
+class Admin extends Usuario {
+    constructor(nome, sobrenome, idade, tipoDeUsuario) {
+        super(nome, sobrenome, idade);
+        this.tipoDeUsuario = tipoDeUsuario;
+    }
+
+    obterNomeCompleto() {
+        return `${super.obterNomeCompleto()} [${this.tipoDeUsuario}]`;
+    }
+
+    atualizaConfig() {
+        return "Config atualizada";
+    }
+}
+
+
+const usuario = new Usuario("Maria", "Garcia", 17);
+console.log(usuario.podeVotar()); // false
+console.log(usuario.obterNomeCompleto()); // "Maria Garcia"
+const admin = new Admin("Alexandre", "Brandão", 20, "superadmin");
+console.log(admin.podeVotar()); // true
+console.log(admin.obterNomeCompleto()); // "Alexandre Brandão [superadmin]"
+console.log(admin.atualizaConfig()); // "Config atualizada"
