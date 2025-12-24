@@ -1,0 +1,7 @@
+const vaiChover = respostaApiTempo => {
+    const dados = JSON.parse(respostaApiTempo);
+    return dados.agora.chuvaEsperada === true;
+}
+
+console.log(vaiChover('{"agora":{"temperatura":18,"umidade":"30%","uvIndex":0,"chuvaEsperada":true}}')); // true
+console.log(vaiChover('{"agora":{"temperatura":25,"umidade":"90%","uvIndex":4,"chuvaEsperada":false}}')); // false
