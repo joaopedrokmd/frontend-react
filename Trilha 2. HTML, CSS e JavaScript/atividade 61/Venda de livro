@@ -1,0 +1,31 @@
+class VendaLivro {
+    constructor() {
+        this.valor = 1000; 
+        this.moeda = "usd";
+        this.estudante = false;
+    }
+
+    aplicaDescontoEstudante() {
+        this.estudante = true;
+        this.valor = 800;
+        return this;
+    }
+
+    moedaCorrente(moeda) {
+        this.moeda = moeda;
+        return this;
+    }
+
+    aplicaPorcentagemDesconto(porcento) {
+        this.valor = this.valor - (this.valor * porcento / 100);
+        return this;
+    }
+}
+
+const vendaLivro = new VendaLivro();
+let desconto = vendaLivro
+    .aplicaDescontoEstudante()
+    .moedaCorrente("eur")
+    .aplicaPorcentagemDesconto(5);
+
+console.log(desconto);
