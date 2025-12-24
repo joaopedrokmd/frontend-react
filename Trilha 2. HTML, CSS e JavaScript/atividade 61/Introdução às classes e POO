@@ -1,0 +1,10 @@
+class Retangulo{
+    constructor(largura, altura) {
+        this.largura = largura;
+        this.altura = altura;
+    }
+}
+
+const fazerQuadrado = () => {
+    return new Retangulo(10, 10);
+};
