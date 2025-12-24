@@ -1,0 +1,9 @@
+class Curso {
+    constructor(nome, completo) {
+        this.nome = nome;
+        this.completo = completo;
+    }
+}
+
+console.log(new Curso("JavaScript", false));
+console.log(new Curso("HTML e CSS", true));
