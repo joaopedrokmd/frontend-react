@@ -1,0 +1,20 @@
+class Desconto {
+    constructor() {
+        this.valor = 1000;
+    }
+
+    aplicarDesconto() {
+        if (Desconto.valido()) {
+            this.valor = 500;
+        }
+    }
+
+    static valido() {
+        return Math.random() <= 0.5; // 50% chance
+    }
+}
+
+console.log(Desconto.valido()); // true ou false
+const desconto = new Desconto();
+desconto.aplicarDesconto();
+console.log(desconto.valor); 
