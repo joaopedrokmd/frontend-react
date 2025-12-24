@@ -1,0 +1,17 @@
+const espera = milisegundos => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, milisegundos);
+    });
+};
+
+const init = () => {
+    console.log("Programa iniciou");
+
+    espera(1000).then(() => {
+        console.log("Espere 1 segundo");
+    });
+};
+
+init();
