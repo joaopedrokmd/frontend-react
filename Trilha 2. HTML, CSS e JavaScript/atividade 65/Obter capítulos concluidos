@@ -1,0 +1,23 @@
+const obterCapitulos = () => {
+    fetch("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/chapters/all.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Erro da API");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data); 
+            const capitulosCompletos = data.filter(chapter => chapter.isCompleted);
+            mostreCapitulosCompletos(capitulosCompletos);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function mostreCapitulosCompletos(chapters) {
+    console.log("Recebidos", chapters);
+}
+
+obterCapitulos();
