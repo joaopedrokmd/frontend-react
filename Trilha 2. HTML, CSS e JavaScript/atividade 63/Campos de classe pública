@@ -1,0 +1,27 @@
+class VendaLivro {
+    valor = 1000;      
+    moeda = "usd";     
+    estudante = false;
+
+    aplicarDescontoEstudante() {
+        this.estudante = true;
+        this.valor = 800;
+        return this;
+    }
+
+    definirMoeda(moeda) {
+        this.moeda = moeda;
+        return this;
+    }
+
+    aplicarDescontoPorcentagem(percentual) {
+        this.valor = this.valor - (this.valor * percentual / 100);
+        return this;
+    }
+}
+
+const vendaLivro = new VendaLivro();
+vendaLivro
+    .aplicarDescontoEstudante()
+    .definirMoeda("eur")
+    .aplicarDescontoPorcentagem(5);
