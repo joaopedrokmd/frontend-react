@@ -1,0 +1,11 @@
+const habilitaModoEscuro = config => {
+    return {
+        ...config,
+        darkTheme: true
+    };
+}
+
+const config = {
+    darkTheme: false
+};
+console.log(habilitaModoEscuro(config)); // {darkTheme: true} (novo objeto)
