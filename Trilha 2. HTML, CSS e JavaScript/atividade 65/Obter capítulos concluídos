@@ -1,0 +1,16 @@
+const obterCapitulos = () => {
+    return fetch(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app/chapters/all.json"
+    )
+        .then(resposta => resposta.json())
+        .then(capitulos => {
+            const capitulosConcluidos = capitulos.filter(capitulo => capitulo.completed);
+            mostreCapitulosCompletos(capitulosConcluidos);
+        });
+}
+
+function mostreCapitulosCompletos(capitulos) {
+    console.log("Recebidos", capitulos);
+}
+
+obterCapitulos();
