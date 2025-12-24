@@ -1,0 +1,54 @@
+const questao1 = () => {
+    // true === true
+    return true;
+}
+
+const questao2 = () => {
+    // false === false
+    return true;
+}
+
+const questao3 = () => {
+    // 14 === 14
+    return true;
+}
+
+const questao4 = () => {
+    // "25" === 25
+    return false;
+}
+
+const questao5 = () => {
+    // "Ola" === "ola"
+    return false;
+}
+
+const questao6 = () => {
+    // [] === []
+    return false;
+}
+
+const questao7 = () => {
+    // new Array() === new Array()
+    return false;
+}
+
+const questao8 = () => {
+    // [1, 2, 3] === [1, 2, 3]
+    return false;
+}
+
+const questao9 = () => {
+    // {} === {}
+    return false;
+}
+
+const questao10 = () => {
+    // {identificacao: 10} === {identificacao: 10}
+    return false;
+}
+
+const questao11 = () => {
+    // {estaDesabilitado: true} === {estaDesabilitado: true}
+    return false;
+}
