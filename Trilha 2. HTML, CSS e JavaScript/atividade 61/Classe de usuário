@@ -1,0 +1,24 @@
+class Usuario {
+    constructor(nome, sobrenome, prefixo, idade) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.prefixo = prefixo;
+        this.idade = idade;
+    }
+
+    obterNomeCompleto() {
+        return `${this.prefixo}. ${this.nome} ${this.sobrenome}`;
+    }
+
+    podeVotar() {
+        return this.idade >= 18;
+    }
+}
+
+const usuario1 = new Usuario("Sara", "Dias", "Sra", 20);
+console.log(usuario1.obterNomeCompleto()); // "Sra. Sara Dias"
+console.log(usuario1.podeVotar()); // true
+
+const usuario2 = new Usuario("Alex", "Gomes", "Sr", 17);
+console.log(usuario2.obterNomeCompleto()); // "Sr. Alex Gomes"
+console.log(usuario2.podeVotar()); // false
