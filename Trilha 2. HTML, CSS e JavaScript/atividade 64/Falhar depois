@@ -1,0 +1,12 @@
+//implemente falharDepois(milisegundos)
+const falharDepois = (milisegundos) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject(`Você me pediu para falhar depois de ${milisegundos}ms e eu falhei!`);
+        }, milisegundos);
+    });
+};
+
+falharDepois(1500).catch(error => {
+    console.error(error); 
+});
