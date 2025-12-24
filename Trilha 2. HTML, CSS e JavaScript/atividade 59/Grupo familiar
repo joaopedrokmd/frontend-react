@@ -1,0 +1,20 @@
+const obterGrupoFamilia = grupos => {
+    return grupos.find(grupo => grupo.titulo === "Família");
+}
+
+const gruposAmostra = [{
+     idChat: 1,
+     titulo: "Futebol",
+     detalhes: {
+         mensagemContagem: 30,
+         publico: true
+     }
+}, {
+     idChat: 2,
+     titulo: "Família",
+     detalhes: {
+         mensagemContagem: 1014,
+         publico: false
+     }
+}];
+console.log(obterGrupoFamilia(gruposAmostra));
