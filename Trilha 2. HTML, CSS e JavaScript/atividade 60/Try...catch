@@ -1,0 +1,13 @@
+const runCode = () => {
+    console.log("Etapa 1");
+
+    try {
+        obterDados(); // mantém a chamada, mesmo inexistente
+    } catch (erro) {
+        console.error(erro);
+    }
+
+    console.log("Etapa 2");
+}
+
+runCode();
