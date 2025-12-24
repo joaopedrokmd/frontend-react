@@ -1,0 +1,32 @@
+<script>
+    class ComponenteFalso {
+        constructor() {
+            this.hasRendered = false;
+            if (!this.render) {
+                throw Error(`Componente ${this.constructor.name} está perdendo uma função render() function`);
+            }
+            const html = this.render();
+            if (!html || typeof html !== "string") {
+                throw Error(`Componente ${this.constructor.name}'s render() deve retornar uma string HTML`);
+            }
+            document.body.insertAdjacentHTML("beforeend", html);
+            setTimeout(() => {
+                if (this.depoisDaPrimeiraRenderizacao) {
+                    this.depoisDaPrimeiraRenderizacao();
+                }
+            }, 300);
+        }
+    }
+
+class Home extends ComponenteFalso {
+        render() {
+            return "<h1>Bem-vindo ao lar!</h1>";
+        }
+
+        depoisDaPrimeiraRenderizacao() {
+            console.log("Renderização inicial concluída");
+        }
+    }
+
+    new Home();
+</script>
