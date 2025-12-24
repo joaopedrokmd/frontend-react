@@ -1,0 +1,33 @@
+class Usuario {
+    constructor(nome, sobrenome, idade) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+    }
+
+    podeVotar() {
+        return this.idade >= 18;
+    }
+
+    obterNomeCompleto() {
+        return `${this.nome} ${this.sobrenome}`;
+    }
+}
+
+class Admin extends Usuario {
+    obterNomeCompleto() {
+        return `${this.nome} ${this.sobrenome} [admin]`;
+    }
+
+    atualizarConfig() {
+        return "Config atualizada";
+    }
+}
+
+const usuario = new Usuario("Sérgio", "Gomes", 17);
+console.log(usuario.podeVotar()); // false
+console.log(usuario.obterNomeCompleto()); // "Sérgio Gomes"
+const admin = new Admin("Alexa", "Bessa", 20);
+console.log(admin.podeVotar()); // true
+console.log(admin.obterNomeCompleto()); // "Alexa Bessa [admin]"
+console.log(admin.atualizarConfig()); // "Config atualizada"
