@@ -1,0 +1,12 @@
+class Tarefas {
+    constructor(afazeres) {
+        this._afazeres = afazeres;
+    }
+
+    get afazeres() {
+        return this._afazeres.join(", ");
+    }
+}
+
+const tarefas = new Tarefas(["Lavar louça", "Limpar cozinha"]);
+console.log(tarefas.afazeres); // "Lavar louça, Limpar cozinha"
