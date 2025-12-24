@@ -1,0 +1,10 @@
+class Usuario {
+    constructor(primeiroNome, ultimoNome, idade) {
+        this.primeiroNome = primeiroNome;
+        this.ultimoNome = ultimoNome;
+        this.idade = idade;
+    }
+}
+
+console.log(new Usuario("Sam", "Azul", 18));
+console.log(new Usuario("Alex", "Green", 25));
