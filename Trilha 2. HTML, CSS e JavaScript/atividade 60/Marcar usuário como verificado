@@ -1,0 +1,20 @@
+const verificaUsuario = (usuarios, usuarioId) => {
+    const usuario = usuarios.find(u => u.idUsuario === usuarioId);
+    usuario.verificado = true;
+};
+
+const usuarios = [{
+    idUsuario: 1,
+    nome: "Sam",
+    verificado: false
+}, {
+    idUsuario: 2,
+    nome: "Alex",
+    verificado: false
+}, {
+    idUsuario: 3,
+    nome: "Charlie",
+    verificado: false
+}];
+verificaUsuario(usuarios, 2);
+console.log(usuarios); 
