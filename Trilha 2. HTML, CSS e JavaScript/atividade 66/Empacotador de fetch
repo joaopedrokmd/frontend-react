@@ -1,0 +1,21 @@
+class NumericHelper {
+    constructor(numero) {
+        this.numero = numero
+    }
+
+    ehPar() {
+        return this.numero % 2 === 0;
+    }
+
+    ehImpar() {
+        return this.numero % 2 === 1;
+    }
+}
+
+const numeroPar = numero => {
+    const helper = new NumericHelper(numero);
+    return helper.ehPar();
+};
+
+console.log(numeroPar(2)); 
+console.log(numeroPar(3)); 
