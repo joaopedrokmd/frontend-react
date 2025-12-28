@@ -1,0 +1,5 @@
+export const idadeVotacao = 18;
+
+export const obterMensagemBoasVindas = () => {
+    return "Bem-vindo ao nosso site";
+};
