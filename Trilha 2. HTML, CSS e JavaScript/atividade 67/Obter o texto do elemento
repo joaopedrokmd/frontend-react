@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+     <nav id="navbar">
+      <a href="" class="nav-brand">App</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">Sobre nós</a></li>
+        <li><a href="" class="nav-item btn btn-default">Registre-se</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="article">
+        <h1 id="headline">Primeiro humano pousa em Marte!</h1>
+        <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, consequatur!</p>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" target="_blank">Sobre nós</a>
+        <a href="contact.html" target="_blank">Contato</a>
+    </footer>
+    <script>
+        const obterTextoDoSelector = cssSelector => {
+  const elemento = document.querySelector(cssSelector);
+  return elemento ? elemento.textContent : "";
+};
+
+        console.log(obterTextoDoSelector("h1")); 
+        console.log(obterTextoDoSelector("h2"));
+    </script>
+  </body>
+</html>
