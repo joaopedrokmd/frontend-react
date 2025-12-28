@@ -1,0 +1,30 @@
+class EmpacotadorBusca {
+    constructor(baseURL) {
+        this.baseURL = baseURL;
+    }
+
+    get(endpoint) {
+        return fetch(this.baseURL + endpoint)
+            .then(response => response.json());
+    }
+}
+
+const obterCapitulos = () => {
+    const API = new EmpacotadorBusca(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app"
+    );
+
+    API.get("/chapters/all.json").then(chapters => {
+        const capitulosCompletos = chapters.filter(
+            chapter => chapter.completed
+        );
+
+        mostrarCapitulosCompletos(capitulosCompletos);
+    });
+};
+
+function mostrarCapitulosCompletos(chapters) {
+    console.log("Recebido: ", chapters);
+}
+
+obterCapitulos();
