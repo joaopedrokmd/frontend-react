@@ -1,0 +1,26 @@
+class EmpacotadorBusca {
+    constructor(baseURL) {
+        this.baseURL = baseURL;
+    }
+
+    get(endpoint) {
+        return fetch(this.baseURL + endpoint)
+            .then(response => response.json());
+    }
+}
+
+const checarPorNovasNotificacoes = () => {
+    const API = new EmpacotadorBusca(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app"
+    );
+
+    API.get("/notifications/new.json").then(data => {
+        mostreNovasNotificacoes(data.length);
+    });
+};
+
+function mostreNovasNotificacoes(count) {
+    console.log(`Você tem ${count} novas notificações. Gostaria de lê-las?`);
+}
+
+checarPorNovasNotificacoes();
