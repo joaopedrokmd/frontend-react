@@ -1,0 +1,27 @@
+class EmpacotadorBusca {
+    constructor(baseURL) {
+        this.baseURL = baseURL;
+    }
+
+    get(endpoint) {
+        return fetch(this.baseURL + endpoint)
+            .then(response => response.json());
+    }
+}
+
+const obterDetalhesTweet = () => {
+    const API = new EmpacotadorBusca(
+        "https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app"
+    );
+
+    API.get("/tweet/1080777336298049537.json").then(data => {
+        const nomeCompleto = `${data.author.first_name} ${data.author.last_name}`;
+        motreNomeAutor(nomeCompleto);
+    });
+};
+
+function motreNomeAutor(nomeCompleto) {
+    console.log(nomeCompleto);
+}
+
+obterDetalhesTweet();
