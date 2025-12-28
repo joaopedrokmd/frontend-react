@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+     <nav id="navbar">
+      <a href="#" class="nav-brand">App</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">Sobre</a></li>
+        <li><a href="" class="nav-item btn btn-default">Registre-se</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+        <h1>App de professor</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+            voluptatem.
+        </p>
+        <form id="grades-form">
+            <label for="user-grade">Nota</label>
+            <input id="user-grade" type="number" placeholder="Entre com a sua nota (0 a 20)" min="0" max="20" step="1">
+            <input type="submit" value="Save" class="btn btn-outline">
+        </form>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" target="_blank">Sobre</a>
+        <a href="contact.html" target="_blank">Contato</a>
+    </footer>
+    <script>
+        class EmpacotadorBusca {
+            constructor(baseURL) {
+                this.baseURL = baseURL;
+            }
+
+            get(endpoint) {
+                return fetch(this.baseURL + endpoint)
+                    .then(response => response.json());
+            }
+
+            put(endpoint, body) {
+                return this._send("put", endpoint, body);
+            }
+
+            post(endpoint, body) {
+                return this._send("post", endpoint, body);
+            }
+
+            delete(endpoint, body) {
+                return this._send("delete", endpoint, body);
+            }
+
+            _send(method, endpoint, body) {
+                return fetch(this.baseURL + endpoint, {
+                    method,
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(body)
+                }).then(response => response.json());
+            }
+        }
+
+       const salvarNota = grade => {
+    const API = new EmpacotadorBusca(
+        "https://api.learnjavascript.online/demo"
+    );
+
+    return API.put("/grades.json", {
+        nota: Number(grade)
+    });
+};
+
+        const form = document.querySelector("#grades-form");
+        const userGrade = document.querySelector("#user-grade");
+
+        form.addEventListener("submit", event => {
+            event.preventDefault();
+
+            salvarNota(userGrade.value);
+        });
+    </script>
+  </body>
+</html>
