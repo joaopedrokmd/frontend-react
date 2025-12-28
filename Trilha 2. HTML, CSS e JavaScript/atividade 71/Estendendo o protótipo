@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+      :root {
+        --light-gray: #DADCE0;
+        --teal: #009688;
+        --dark-blue: #3F51B5;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--light-gray);
+      }
+
+      nav {
+        background-color: var(--dark-blue);
+        color: white;
+        padding: 20px 30px;
+      }
+
+      .modal {
+        opacity: 0;
+        transition: transform 140ms ease-out, opacity 140ms ease-out;
+        background-color: var(--teal);
+        height: 100vh;
+        transform: translateY(80px);
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .modal.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .modal h1 {
+        margin: 0;
+        padding: 20px;
+        color: white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px;
+      }
+
+      ul li {
+        background: white;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+      }
+
+      .button-fab {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        border: none;
+        cursor: pointer;
+        background-color: var(--teal);
+        transition: transform 160ms;
+      }
+
+      .button-fab.rotate {
+        transform: rotate(135deg);
+      }
+
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+
+      .textfield {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 15px;
+        background-color: var(--dark-blue);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Participantes</h1>
+    </nav>
+
+    <ul id="lista">
+      <li tabindex="0">Sam Koein</li>
+      <li tabindex="0">Lee Bron</li>
+    </ul>
+
+    <div id="app-modal" class="modal">
+      <h1>Novo participante</h1>
+      <div class="container">
+        <form id="form-participante">
+          <label>Nome:</label>
+          <input
+            type="text"
+            class="textfield"
+            id="nome-participante"
+            placeholder="Nome do participante"
+          />
+          <input type="submit" class="btn" value="Adicionar" />
+        </form>
+      </div>
+    </div>
+
+    <button id="fab" class="button-fab">+</button>
+
+    <script>
+      const fab = document.querySelector("#fab");
+      const participante = document.querySelector("#nome-participante");
+      const modal = document.querySelector("#app-modal");
+      const form = document.querySelector("#form-participante");
+      const lista = document.querySelector("#lista");
+
+      const toggleModal = () => {
+        modal.classList.toggle("show");
+        fab.classList.toggle("rotate");
+
+        if (modal.classList.contains("show")) {
+          participante.focus();
+        } else {
+          participante.blur();
+        }
+      };
+
+      const init = () => {
+        fab.addEventListener("click", toggleModal);
+
+        form.addEventListener("submit", event => {
+          event.preventDefault();
+          toggleModal();
+
+          lista.insertAdjacentHTML(
+            "afterbegin",
+            `<li tabindex="0">${participante.value}</li>`
+          );
+
+          participante.value = "";
+        });
+      };
+
+      init();
+
+      // 🔑 ATALHOS DE TECLADO
+      document.addEventListener("keyup", event => {
+        const modalAberto = modal.classList.contains("show");
+
+        if (event.key === "n" && !modalAberto) {
+          toggleModal();
+        }
+
+        if (event.key === "Escape" && modalAberto) {
+          toggleModal();
+        }
+      });
+    </script>
+  </body>
+</html>
