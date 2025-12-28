@@ -1,0 +1,25 @@
+class Helpers {
+    constructor(word) {
+        this.word = word
+    }
+
+    maiuscula() {
+        return this.word.toUpperCase();
+    }
+
+    minuscula() {
+        return this.word.toLowerCase();
+    }
+
+    capitalizar() {
+        return this.word[0].toUpperCase() + this.word.substring(1).toLowerCase();
+    }
+}
+
+const capitalizeNome = nome => {
+    const helper = new Helpers(nome);
+    return helper.capitalizar();
+};
+
+console.log(capitalizeNome("AlEx"));
+console.log(capitalizeNome("chARLEY")); 
