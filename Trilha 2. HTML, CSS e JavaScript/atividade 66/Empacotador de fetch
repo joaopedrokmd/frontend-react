@@ -1,21 +1,18 @@
-class NumericHelper {
-    constructor(numero) {
-        this.numero = numero
+class EmpacotadorBusca {
+    constructor(baseURL) {
+        this.baseURL = baseURL;
     }
 
-    ehPar() {
-        return this.numero % 2 === 0;
-    }
-
-    ehImpar() {
-        return this.numero % 2 === 1;
+    get(endpoint) {
+        return fetch(this.baseURL + endpoint)
+            .then(response => response.json());
     }
 }
 
-const numeroPar = numero => {
-    const helper = new NumericHelper(numero);
-    return helper.ehPar();
-};
+try {
+    const API = new EmpacotadorBusca("https://jsdemo-3f387-default-rtdb.europe-west1.firebasedatabase.app");
 
-console.log(numeroPar(2)); 
-console.log(numeroPar(3)); 
+    API.get("/notifications/new.json").then(data => {
+        console.log(data);
+    });
+} catch(error) {}
