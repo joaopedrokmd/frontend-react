@@ -1,0 +1,6 @@
+function falarAlto(texto) {
+  return texto.toUpperCase();
+}
+
+console.log(falarAlto("Funciona"));   
+console.log(falarAlto("Como você está?")); 
